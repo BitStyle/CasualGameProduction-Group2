@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float clampBufferX = 1.0f;
     [SerializeField] float clampBufferY = 1.0f;
 
+
     float minPosX;
     float maxPosX;
     float minPosY;
@@ -79,5 +80,5 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector3 velocity = new Vector3(myRigidbody.velocity.x, myRigidbody.velocity.y, moveSpeedZ);
         myRigidbody.velocity = velocity;
-    }
+    }  
 }

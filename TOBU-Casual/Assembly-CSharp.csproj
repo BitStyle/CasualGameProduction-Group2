@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraLock.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Score.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/da746541/Documents/GitHub/CasualGameProduction-Group2/TOBU-Casual/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
