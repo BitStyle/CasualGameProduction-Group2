@@ -17,7 +17,7 @@ public class CameraLock : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        FollowTarget();
+        FollowTarget();     //I call this one... a pro gamer move
     }
 
     private void FollowTarget()
