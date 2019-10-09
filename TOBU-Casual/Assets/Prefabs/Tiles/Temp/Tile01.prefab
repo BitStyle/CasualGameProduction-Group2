@@ -3,8 +3,7 @@
 --- !u!1 &2704034376098310494
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 5050477694559967326, guid: ee4d7829232f7e141b296ef49f1963f8,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
@@ -23,8 +22,7 @@ GameObject:
 --- !u!4 &2704034376098310482
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 5050477694559967314, guid: ee4d7829232f7e141b296ef49f1963f8,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2704034376098310494}
@@ -38,8 +36,7 @@ Transform:
 --- !u!33 &2704034376098310481
 MeshFilter:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 5050477694559967313, guid: ee4d7829232f7e141b296ef49f1963f8,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2704034376098310494}
@@ -47,8 +44,7 @@ MeshFilter:
 --- !u!23 &2704034376098310480
 MeshRenderer:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 5050477694559967312, guid: ee4d7829232f7e141b296ef49f1963f8,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2704034376098310494}
@@ -85,8 +81,7 @@ MeshRenderer:
 --- !u!65 &2704034376098310495
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 5050477694559967327, guid: ee4d7829232f7e141b296ef49f1963f8,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2704034376098310494}
@@ -99,8 +94,7 @@ BoxCollider:
 --- !u!1 &2867079815345950278
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 166423276307847230, guid: ee4d7829232f7e141b296ef49f1963f8,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
@@ -116,8 +110,7 @@ GameObject:
 --- !u!4 &2245404557684098367
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 4228861891901985607, guid: ee4d7829232f7e141b296ef49f1963f8,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2867079815345950278}
