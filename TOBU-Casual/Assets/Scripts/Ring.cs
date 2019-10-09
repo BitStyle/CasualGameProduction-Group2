@@ -10,10 +10,10 @@ public class Ring : MonoBehaviour
     {
         if(collision.collider.tag == "Player")
         {
+            FindObjectOfType<AudioManager>().Play("Ring");
             //Do score stuff here
-            //Do SFX stuff here
             //Do particle FX here
-            Debug.Log("Get Ring");
+            //Debug.Log("Get Ring");
            
             Destroy(this.gameObject);
         }

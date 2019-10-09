@@ -25,13 +25,10 @@ public class Player : MonoBehaviour
         {
             GameManager.Instance.IsDead = true;
         }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.tag == "Ring")
+        else if (collision.collider.tag == "Ring")
         {
             GameManager.Instance.RingCounter++;
+            Debug.Log("Ring Count: " + GameManager.Instance.RingCounter);
         }
     }
 }

@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
         get { return _ringCounter; }
         set
         {
-            if (_ringCounter > _maxRings)
+            if (_ringCounter >= _maxRings)
             {
                 _ringCounter = _maxRings;
             }
