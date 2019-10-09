@@ -33,7 +33,7 @@ public class Score : MonoBehaviour
         scoreToAdd = scoreMultiplier * DistTraveled();
         score += scoreToAdd;
 
-        Debug.Log(score);
+        //Debug.Log(score);
     }
 
     private float DistTraveled()
