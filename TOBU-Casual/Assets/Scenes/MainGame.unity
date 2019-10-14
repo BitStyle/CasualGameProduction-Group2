@@ -318,7 +318,7 @@ PrefabInstance:
     - target: {fileID: 7483596329254173224, guid: 2ac21824616b2a94eb85c8a6c20964b2,
         type: 3}
       propertyPath: sounds.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7483596329254173224, guid: 2ac21824616b2a94eb85c8a6c20964b2,
         type: 3}
@@ -338,6 +338,26 @@ PrefabInstance:
     - target: {fileID: 7483596329254173224, guid: 2ac21824616b2a94eb85c8a6c20964b2,
         type: 3}
       propertyPath: sounds.Array.data[0].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483596329254173224, guid: 2ac21824616b2a94eb85c8a6c20964b2,
+        type: 3}
+      propertyPath: sounds.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 27b81ceef3f0c3d4abef29518437ee45, type: 3}
+    - target: {fileID: 7483596329254173224, guid: 2ac21824616b2a94eb85c8a6c20964b2,
+        type: 3}
+      propertyPath: sounds.Array.data[1].name
+      value: BGMusic1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483596329254173224, guid: 2ac21824616b2a94eb85c8a6c20964b2,
+        type: 3}
+      propertyPath: sounds.Array.data[1].volume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483596329254173224, guid: 2ac21824616b2a94eb85c8a6c20964b2,
+        type: 3}
+      propertyPath: sounds.Array.data[1].pitch
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
