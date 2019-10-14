@@ -7,7 +7,8 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        //Not sure where the best place to put this is (initiating background music)
+        FindObjectOfType<AudioManager>().Play("BGMusic1");
     }
 
     // Update is called once per frame
