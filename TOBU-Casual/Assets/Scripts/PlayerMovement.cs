@@ -71,6 +71,9 @@ public class PlayerMovement : MonoBehaviour
     {
         float deltaX = Input.GetAxisRaw("Horizontal") * moveSpeedX;
         float deltaY = Input.GetAxisRaw("Vertical") * moveSpeedY;
+        //Gyroscopid input
+        deltaX += Input.acceleration.x;
+        deltaY += Input.acceleration.y;
 
         Vector3 velocity = new Vector3(deltaX, deltaY, myRigidbody.velocity.z);
         myRigidbody.velocity = velocity;
