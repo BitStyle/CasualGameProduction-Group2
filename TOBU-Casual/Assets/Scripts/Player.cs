@@ -21,6 +21,10 @@ public class Player : MonoBehaviour
         {
             Debug.Log("You Died");
         }
+        if (Input.GetKeyDown("p"))
+        {
+            PauseGame();
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -34,5 +38,10 @@ public class Player : MonoBehaviour
             GameManager.Instance.RingCounter++;
             Debug.Log("Ring Count: " + GameManager.Instance.RingCounter);
         }
+    }
+
+    void PauseGame()
+    {
+        GameManager.Instance.PauseGame();
     }
 }
