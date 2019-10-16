@@ -609,6 +609,10 @@ PrefabInstance:
       propertyPath: moveSpeedZ
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 833430347, guid: 861333b66da7dab41a0283d8471826b1, type: 3}
+      propertyPath: usingGyroControls
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 861333b66da7dab41a0283d8471826b1, type: 3}
 --- !u!1001 &6723299901784881806
