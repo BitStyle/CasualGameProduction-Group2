@@ -9,6 +9,9 @@ public class Player : MonoBehaviour
     {
         //Not sure where the best place to put this is (initiating background music)
         FindObjectOfType<AudioManager>().Play("BGMusic1");
+
+        //Stop game from sleeping, because gyroscope is not a registered input.
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
     }
 
     // Update is called once per frame

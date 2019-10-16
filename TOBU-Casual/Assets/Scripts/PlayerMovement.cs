@@ -11,6 +11,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float moveSpeedZ = 2.0f;
     [SerializeField] float clampBufferX = 1.0f;
     [SerializeField] float clampBufferY = 1.0f;
+    //Gyroscope Sensitivity
+    [SerializeField] float gyroSensitivity = 0.0f;
+    [SerializeField] float gyroSpeedX = 15;
+    [SerializeField] float gyroSpeedZ = 20;
 
 
     float minPosX;
@@ -71,6 +75,10 @@ public class PlayerMovement : MonoBehaviour
     {
         float deltaX = Input.GetAxisRaw("Horizontal") * moveSpeedX;
         float deltaY = Input.GetAxisRaw("Vertical") * moveSpeedY;
+        //Gyroscopid input
+        deltaX += (Input.acceleration.x * (gyroSpeedX + gyroSensitivity));
+        //The 0.5f applied to the z acceleration allows the player to stay in the center of the screen vertically when the phone is straight
+        deltaY += ((Input.acceleration.z + 0.5f) * (gyroSpeedZ + gyroSensitivity));
 
         Vector3 velocity = new Vector3(deltaX, deltaY, myRigidbody.velocity.z);
         myRigidbody.velocity = velocity;
