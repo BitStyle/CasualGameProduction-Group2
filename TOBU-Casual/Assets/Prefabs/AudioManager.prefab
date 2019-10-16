@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7325928982206123932}
   - component: {fileID: 7483596329254173224}
+  - component: {fileID: 670470359}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -43,3 +44,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3d19a2fb274854eaad3e919a4ac87c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sounds:
+  - clip: {fileID: 8300000, guid: a6e224c3de92942478b06bb2c2164eb0, type: 3}
+    name: Ring
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 27b81ceef3f0c3d4abef29518437ee45, type: 3}
+    name: BGMusic1
+    volume: 0.3
+    pitch: 1
+    source: {fileID: 0}
+  nameOfBGM: BGMusic1
+--- !u!114 &670470359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7212859704787980879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9da155522a9b95945ac6150e374e8fe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameOfBGM: BGMusic1
+  am: {fileID: 7483596329254173224}
