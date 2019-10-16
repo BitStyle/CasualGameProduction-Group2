@@ -1,14 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
+using TMPro;
 using UnityEngine;
 
 public class Score : MonoBehaviour
 {
-    [SerializeField] float scoreMultiplier = 1.0f;
+    [SerializeField] float scoreMultiplier = 0.05f;
+    public TextMeshProUGUI scoreDisplay;
 
     Vector3 startLoc;
 
-    static float score = 0;
+    float score = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +22,8 @@ public class Score : MonoBehaviour
     void Update()
     {
         TravelScore();
+
+        scoreDisplay.text = "Score: " + score;
     }
 
     private void GetStartLoc()
@@ -32,6 +37,7 @@ public class Score : MonoBehaviour
 
         scoreToAdd = scoreMultiplier * DistTraveled();
         score += scoreToAdd;
+        score = Mathf.Round(score);
 
         //Debug.Log(score);
     }
