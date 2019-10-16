@@ -19,9 +19,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    [SerializeField] private GameObject _pauseMenuPanel;
     public bool IsDead { get; set; } = false;
     private int _ringCounter = 0;
     private int _maxRings = 5;
+    private float _defaultTimeScale = 1;
+    private bool _isPaused = false;
+    private bool _pauseMenuIsActive = false;
+
     public int RingCounter
     {
         get { return _ringCounter; }
@@ -39,6 +44,36 @@ public class GameManager : MonoBehaviour
             {
                 _ringCounter = value;
             }
+        }
+    }
+
+    public void PauseGame()
+    {
+        if(_isPaused == false)
+        {
+            _isPaused = true;
+            Time.timeScale = 0;
+            TogglePauseMenu();
+        }
+        else if (_isPaused == true)
+        {
+            _isPaused = false;
+            Time.timeScale = _defaultTimeScale;
+            TogglePauseMenu();
+        }
+    }
+
+    public void TogglePauseMenu()
+    {
+        if (_pauseMenuIsActive)
+        {
+            _pauseMenuIsActive = !_pauseMenuIsActive;
+            _pauseMenuPanel.SetActive(false);
+        }
+        else if (!_pauseMenuIsActive)
+        {
+            _pauseMenuIsActive = !_pauseMenuIsActive;
+            _pauseMenuPanel.SetActive(true);
         }
     }
 
