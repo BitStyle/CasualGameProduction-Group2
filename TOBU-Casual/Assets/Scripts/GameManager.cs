@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     private int _ringCounter = 0;
     private int _maxRings = 5;
     private float _defaultTimeScale = 1;
-    private bool _isPaused = false;
+    public bool IsPaused { get; set; } = false;
     private bool _pauseMenuIsActive = false;
 
     public int RingCounter
@@ -47,15 +47,15 @@ public class GameManager : MonoBehaviour
 
     public void PauseGame()
     {
-        if(_isPaused == false)
+        if(IsPaused == false)
         {
-            _isPaused = true;
+            IsPaused = true;
             Time.timeScale = 0;
             TogglePauseMenu();
         }
-        else if (_isPaused == true)
+        else if (IsPaused == true)
         {
-            _isPaused = false;
+            IsPaused = false;
             Time.timeScale = _defaultTimeScale;
             TogglePauseMenu();
         }
