@@ -21,8 +21,11 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TravelScore();
-
+        if (!GameManager.Instance.IsPaused)
+        {
+            TravelScore();
+        }
+        
         scoreDisplay.text = "Score: " + score;
     }
 
