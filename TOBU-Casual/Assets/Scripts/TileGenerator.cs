@@ -12,7 +12,7 @@ public class TileGenerator : MonoBehaviour
     [SerializeField] GameObject[] spiritTilesArray;
     [SerializeField] GameObject tileManager;
     [SerializeField] float tileLength = 0f;
-    [SerializeField] float timeInSpiritRealm = 5f;
+    [SerializeField] float timeInSpiritRealm = 10f;
     [SerializeField] int numOfStartingTiles = 1;
     [SerializeField] int tilesInAdvance = 3;
     [SerializeField] int spiritTilesInAdvance = 6;
@@ -23,6 +23,7 @@ public class TileGenerator : MonoBehaviour
     bool gateSpawned = false;
     float spiritRealmExitTime = -1f;
     float spiritRealmExitTimeDefault = -1f;
+    GameObject[] ringsArray;
 
     void Start()
     {
@@ -42,6 +43,8 @@ public class TileGenerator : MonoBehaviour
 
                 spiritRealmExitTime = Time.time + timeInSpiritRealm;
 
+                DestroyRings();
+
                 gateSpawned = true;
             }
             else if (gateSpawned)
@@ -54,6 +57,16 @@ public class TileGenerator : MonoBehaviour
             SpawnTiles();
         }
         DestroyTiles();
+    }
+
+    private void DestroyRings()
+    {
+        ringsArray = GameObject.FindGameObjectsWithTag("Ring");
+        foreach(GameObject ring in ringsArray)
+        {
+            Destroy(ring);
+        }
+        Debug.Log("Rings Destroyed");
     }
 
     private void SpawnGate()
@@ -79,7 +92,7 @@ public class TileGenerator : MonoBehaviour
             //Instantiate the tile as a game object, and set the Tile Manager as parent
             GameObject tileGameObject = Instantiate(spiritTilesArray[arrayIndex], posToSpawn, Quaternion.identity) as GameObject;
             tileGameObject.transform.SetParent(this.transform);
-            Debug.Log("Tile Spawned");
+            Debug.Log("Spirit Tile Spawned");
 
             //Update spawn position of next tile
             posToSpawn.z += tileLength;
@@ -92,6 +105,7 @@ public class TileGenerator : MonoBehaviour
             gateSpawned = false;
             GameManager.Instance.RingCounter = 0;
             spiritRealmExitTime = spiritRealmExitTimeDefault;
+            //Debug.Log("Rings RESET. Ring Counter: " + GameManager.Instance.RingCounter);
         }
         
     }
