@@ -20,11 +20,11 @@ public class Ring : MonoBehaviour
             //Do score stuff here
             //Do particle FX here
             this.gameObject.SetActive(false);
-            Instantiate(particles, this.transform.position,this.transform.rotation);
+            GameObject particleInstance = Instantiate(particles, this.transform.position,this.transform.rotation);
             ActivateParticleSystem();
             Debug.Log("Get Ring");
             Destroy(this.gameObject, 2f);
-            Destroy(particles, particles.GetComponent<ParticleSystem>().main.duration);
+            Destroy(particleInstance, particleInstance.GetComponent<ParticleSystem>().main.duration);
         }
     }
 }
