@@ -5,6 +5,12 @@ using UnityEngine;
 public class Ring : MonoBehaviour
 {
     [SerializeField] float scoreValue = 0;
+    [SerializeField] GameObject particles;
+
+    private void ActivateParticleSystem()
+    {
+        particles.GetComponent<ParticleSystem>().Play();
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -13,9 +19,12 @@ public class Ring : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("Ring");
             //Do score stuff here
             //Do particle FX here
-            //Debug.Log("Get Ring");
-           
-            Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
+            GameObject particleInstance = Instantiate(particles, this.transform.position,this.transform.rotation);
+            ActivateParticleSystem();
+            Debug.Log("Get Ring");
+            Destroy(this.gameObject, 2f);
+            Destroy(particleInstance, particleInstance.GetComponent<ParticleSystem>().main.duration);
         }
     }
 }

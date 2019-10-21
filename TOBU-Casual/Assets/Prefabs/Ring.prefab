@@ -61,6 +61,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreValue: 0
+  particles: {fileID: 6780029591497398159, guid: 55d40ba5c3a382849945494c87a33e17,
+    type: 3}
 --- !u!82 &8811720232242986397
 AudioSource:
   m_ObjectHideFlags: 0
