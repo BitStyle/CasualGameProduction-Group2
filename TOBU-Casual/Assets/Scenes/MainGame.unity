@@ -905,7 +905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreMultiplier: 0.05
-  scoreDisplay: {fileID: 0}
+  scoreDisplay: {fileID: 1781956174}
 --- !u!1 &1781956172
 GameObject:
   m_ObjectHideFlags: 0
@@ -1624,19 +1624,19 @@ PrefabInstance:
         type: 3}
       propertyPath: tilesArray.Array.data[0]
       value: 
-      objectReference: {fileID: 2867079815345950278, guid: 741e88181164b1143ad8934e9f533ea6,
+      objectReference: {fileID: 6058788040158491608, guid: d36aeb9fc04d91d469fc665be1572a4c,
         type: 3}
     - target: {fileID: 6723299902231445722, guid: c0493f7da16b74a4695df30f2bdaadb2,
         type: 3}
       propertyPath: tilesArray.Array.data[1]
       value: 
-      objectReference: {fileID: 2867079815345950278, guid: b1e0bc9562a50364d9a944bf0d637d83,
+      objectReference: {fileID: 6058788040158491608, guid: 672c2bd8ef91a4f4fb28a2c9e11260f8,
         type: 3}
     - target: {fileID: 6723299902231445722, guid: c0493f7da16b74a4695df30f2bdaadb2,
         type: 3}
       propertyPath: tilesArray.Array.data[2]
       value: 
-      objectReference: {fileID: 2867079815345950278, guid: 87ed44e202bd4e9438c377f7a5b3fb0c,
+      objectReference: {fileID: 6058788040158491608, guid: b559cdaaccf057346896cfb284e27bbe,
         type: 3}
     - target: {fileID: 6723299902231445722, guid: c0493f7da16b74a4695df30f2bdaadb2,
         type: 3}
