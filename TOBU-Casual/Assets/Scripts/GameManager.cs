@@ -32,17 +32,15 @@ public class GameManager : MonoBehaviour
         get { return _ringCounter; }
         set
         {
-            if (_ringCounter >= _maxRings)
-            {
-                _ringCounter = _maxRings;
-            }
-            else if (_ringCounter < 0)
+            _ringCounter = value;
+
+            if (_ringCounter < 0)
             {
                 _ringCounter = 0;
             }
-            else
+            else if (_ringCounter >= _maxRings)
             {
-                _ringCounter = value;
+                _ringCounter = _maxRings;
             }
         }
     }
