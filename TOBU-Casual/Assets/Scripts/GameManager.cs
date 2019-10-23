@@ -20,12 +20,14 @@ public class GameManager : MonoBehaviour
     }
 
     [SerializeField] private GameObject _pauseMenuPanel;
+    [SerializeField] private GameObject _pauseButton;
     public bool IsDead { get; set; } = false;
     private int _ringCounter = 0;
     private int _maxRings = 5;
     private float _defaultTimeScale = 1;
     public bool IsPaused { get; set; } = false;
     private bool _pauseMenuIsActive = false;
+    private bool _pauseButtonIsActive = true;
 
     public int RingCounter
     {
@@ -52,12 +54,14 @@ public class GameManager : MonoBehaviour
             IsPaused = true;
             Time.timeScale = 0;
             TogglePauseMenu();
+            TogglePauseButton();
         }
         else if (IsPaused == true)
         {
             IsPaused = false;
             Time.timeScale = _defaultTimeScale;
             TogglePauseMenu();
+            TogglePauseButton();
         }
     }
 
@@ -73,6 +77,25 @@ public class GameManager : MonoBehaviour
             _pauseMenuIsActive = !_pauseMenuIsActive;
             _pauseMenuPanel.SetActive(true);
         }
+    }
+
+    public void TogglePauseButton()
+    {
+        if (_pauseButtonIsActive)
+        {
+            _pauseButtonIsActive = false;
+            _pauseButton.SetActive(false);
+        }
+        else if (!_pauseButtonIsActive)
+        {
+            _pauseButtonIsActive = true;
+            _pauseButton.SetActive(true);
+        }
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 
     private void Awake()
