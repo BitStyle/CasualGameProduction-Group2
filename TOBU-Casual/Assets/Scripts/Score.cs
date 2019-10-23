@@ -8,6 +8,7 @@ public class Score : MonoBehaviour
 {
     [SerializeField] float scoreMultiplier = 0.05f;
     public TextMeshProUGUI scoreDisplay;
+    public Image scoreImage;
 
     Vector3 startLoc;
 
@@ -26,7 +27,7 @@ public class Score : MonoBehaviour
             TravelScore();
         }
         
-        scoreDisplay.text = "Score: " + score;
+        scoreDisplay.text = ": " + score.ToString();
     }
 
     private void GetStartLoc()
