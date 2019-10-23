@@ -8,6 +8,7 @@ public class Score : MonoBehaviour
 {
     [SerializeField] float scoreMultiplier = 0.05f;
     public TextMeshProUGUI scoreDisplay;
+    public Image scoreImage;
 
     Vector3 startLoc;
 
@@ -21,9 +22,12 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TravelScore();
-
-        scoreDisplay.text = "Score: " + score;
+        if (!GameManager.Instance.IsPaused)
+        {
+            TravelScore();
+        }
+        
+        scoreDisplay.text = ": " + score.ToString();
     }
 
     private void GetStartLoc()
