@@ -16,7 +16,7 @@ public class Ring : MonoBehaviour
     {
         if(collision.collider.tag == "Player")
         {
-            FindObjectOfType<AudioManager>().Play("Ring");
+            //FindObjectOfType<AudioManager>().Play("Ring");
             //Do score stuff here
             //Do particle FX here
             this.gameObject.SetActive(false);
