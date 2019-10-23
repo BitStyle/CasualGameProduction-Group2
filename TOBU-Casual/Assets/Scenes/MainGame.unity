@@ -1674,7 +1674,7 @@ PrefabInstance:
     - target: {fileID: 7483596329254173224, guid: 2ac21824616b2a94eb85c8a6c20964b2,
         type: 3}
       propertyPath: sounds.Array.data[1].volume
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7483596329254173224, guid: 2ac21824616b2a94eb85c8a6c20964b2,
         type: 3}
@@ -1750,6 +1750,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6609056176175823065, guid: 508ebc54e17ec364089e3275fb7ea6f8,
+        type: 3}
+      propertyPath: _pauseMenuCanvas
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6609056176175823065, guid: 508ebc54e17ec364089e3275fb7ea6f8,
+        type: 3}
+      propertyPath: _pauseMenuPanel
+      value: 
+      objectReference: {fileID: 383802569}
+    - target: {fileID: 6609056176175823065, guid: 508ebc54e17ec364089e3275fb7ea6f8,
+        type: 3}
+      propertyPath: _pauseButton
+      value: 
+      objectReference: {fileID: 1156764797}
     - target: {fileID: 3840123414988273749, guid: 508ebc54e17ec364089e3275fb7ea6f8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1805,21 +1820,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6609056176175823065, guid: 508ebc54e17ec364089e3275fb7ea6f8,
-        type: 3}
-      propertyPath: _pauseMenuCanvas
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6609056176175823065, guid: 508ebc54e17ec364089e3275fb7ea6f8,
-        type: 3}
-      propertyPath: _pauseMenuPanel
-      value: 
-      objectReference: {fileID: 383802569}
-    - target: {fileID: 6609056176175823065, guid: 508ebc54e17ec364089e3275fb7ea6f8,
-        type: 3}
-      propertyPath: _pauseButton
-      value: 
-      objectReference: {fileID: 1156764797}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 508ebc54e17ec364089e3275fb7ea6f8, type: 3}
 --- !u!1001 &4522401114464101102
