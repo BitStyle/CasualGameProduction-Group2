@@ -38,7 +38,11 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
+<<<<<<< Updated upstream
   m_IndirectSpecularColor: {r: 0.68191206, g: 0.7390675, b: 0.85708535, a: 1}
+=======
+  m_IndirectSpecularColor: {r: 0.4033591, g: 0.39430735, b: 0.6790249, a: 1}
+>>>>>>> Stashed changes
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -977,5 +981,66 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2867079815345950278, guid: 81674f6ffedc1944697cbe640b023387,
         type: 3}
+<<<<<<< Updated upstream
+=======
+    - target: {fileID: 6723299902231445722, guid: c0493f7da16b74a4695df30f2bdaadb2,
+        type: 3}
+      propertyPath: spiritGate
+      value: 
+      objectReference: {fileID: 2867079815345950278, guid: ee4d7829232f7e141b296ef49f1963f8,
+        type: 3}
+    - target: {fileID: 6723299902231445722, guid: c0493f7da16b74a4695df30f2bdaadb2,
+        type: 3}
+      propertyPath: spiritTilesArray.Array.data[0]
+      value: 
+      objectReference: {fileID: 2867079815345950278, guid: 741e88181164b1143ad8934e9f533ea6,
+        type: 3}
+    - target: {fileID: 6723299902231445722, guid: c0493f7da16b74a4695df30f2bdaadb2,
+        type: 3}
+      propertyPath: spiritTilesArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 2867079815345950278, guid: b1e0bc9562a50364d9a944bf0d637d83,
+        type: 3}
+    - target: {fileID: 6723299902231445722, guid: c0493f7da16b74a4695df30f2bdaadb2,
+        type: 3}
+      propertyPath: spiritTilesArray.Array.data[2]
+      value: 
+      objectReference: {fileID: 2867079815345950278, guid: 87ed44e202bd4e9438c377f7a5b3fb0c,
+        type: 3}
+    - target: {fileID: 6723299902231445722, guid: c0493f7da16b74a4695df30f2bdaadb2,
+        type: 3}
+      propertyPath: spiritTilesArray.Array.data[3]
+      value: 
+      objectReference: {fileID: 2867079815345950278, guid: 4fe30a448180cd840b0f4abe303da870,
+        type: 3}
+    - target: {fileID: 6723299902231445722, guid: c0493f7da16b74a4695df30f2bdaadb2,
+        type: 3}
+      propertyPath: spiritTilesArray.Array.data[4]
+      value: 
+      objectReference: {fileID: 2867079815345950278, guid: 560fc047507bb14429e8afbf74a328ed,
+        type: 3}
+    - target: {fileID: 6723299902231445722, guid: c0493f7da16b74a4695df30f2bdaadb2,
+        type: 3}
+      propertyPath: spiritTilesArray.Array.data[6]
+      value: 
+      objectReference: {fileID: 2867079815345950278, guid: 81674f6ffedc1944697cbe640b023387,
+        type: 3}
+    - target: {fileID: 6723299902231445722, guid: c0493f7da16b74a4695df30f2bdaadb2,
+        type: 3}
+      propertyPath: spiritTilesArray.Array.data[5]
+      value: 
+      objectReference: {fileID: 2867079815345950278, guid: 46c86e2f616f50e499d23a48cd5a4cdd,
+        type: 3}
+    - target: {fileID: 6723299902231445722, guid: c0493f7da16b74a4695df30f2bdaadb2,
+        type: 3}
+      propertyPath: spiritTilesInAdvance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6723299902231445722, guid: c0493f7da16b74a4695df30f2bdaadb2,
+        type: 3}
+      propertyPath: timeInSpiritRealm
+      value: 15
+      objectReference: {fileID: 0}
+>>>>>>> Stashed changes
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0493f7da16b74a4695df30f2bdaadb2, type: 3}
