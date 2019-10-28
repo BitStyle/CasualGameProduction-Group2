@@ -2,10 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
+
+    [SerializeField] string nameOfBGM = "BGMusic1";
+    public AudioMixer audioMixer;
 
     private void Awake()
     {
@@ -26,5 +30,10 @@ public class AudioManager : MonoBehaviour
         {
             s.source.Play();
         }        
+    }
+
+    public void SetMasterVolume(float volume)
+    {
+        audioMixer.SetFloat("masterVolume", volume);
     }
 }
