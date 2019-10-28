@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.52891374, g: 0.657301, b: 0.9142714, a: 1}
+  m_IndirectSpecularColor: {r: 0.68191206, g: 0.7390675, b: 0.85708535, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2143,7 +2143,7 @@ PrefabInstance:
         type: 3}
       propertyPath: spiritTilesArray.Array.data[5]
       value: 
-      objectReference: {fileID: 2867079815345950278, guid: 81674f6ffedc1944697cbe640b023387,
+      objectReference: {fileID: 2867079815345950278, guid: 46c86e2f616f50e499d23a48cd5a4cdd,
         type: 3}
     - target: {fileID: 6723299902231445722, guid: c0493f7da16b74a4695df30f2bdaadb2,
         type: 3}
