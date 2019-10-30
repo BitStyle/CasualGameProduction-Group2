@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-Base path: C:/Program Files/Unity/Hub/Editor/2019.1.3f1/Editor/Data
-=======
 Base path: C:/Program Files/Unity 2019.1.3f1/Editor/Data
->>>>>>> Stashed changes
 Cmd: initializeCompiler
 Cmd: preprocess
   insize=3608 outsize=1262 ok=1
