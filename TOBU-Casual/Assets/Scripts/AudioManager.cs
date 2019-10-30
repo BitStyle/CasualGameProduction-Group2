@@ -23,6 +23,11 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        //Debug.Log(audioMixer);
+    }
+
     public void Play(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
@@ -34,6 +39,8 @@ public class AudioManager : MonoBehaviour
 
     public void SetMasterVolume(float volume)
     {
+        //Debug.Log(audioMixer);
         audioMixer.SetFloat("masterVolume", volume);
+        //Debug.Log("volume = " + volume + "\n Master volume = ");
     }
 }
