@@ -6,11 +6,12 @@ using UnityEngine;
 
 public class Score : MonoBehaviour
 {
-    [SerializeField] float scoreMultiplier = 0.05f;
+    [SerializeField] float scoreMultiplier = 1f;
     public TextMeshProUGUI scoreDisplay;
     public Image scoreImage;
 
     Vector3 startLoc;
+    Vector3 lastLoc;
 
     float score = 0;
     // Start is called before the first frame update
@@ -33,6 +34,7 @@ public class Score : MonoBehaviour
     private void GetStartLoc()
     {
         startLoc = transform.position;
+        lastLoc = startLoc;
     }
 
     private void TravelScore()
@@ -48,7 +50,8 @@ public class Score : MonoBehaviour
 
     private float DistTraveled()
     {
-        float deltaZ = transform.position.z - startLoc.z;
+        float deltaZ = transform.position.z - lastLoc.z;
+        lastLoc.z = transform.position.z;
         return deltaZ;
     }
 
