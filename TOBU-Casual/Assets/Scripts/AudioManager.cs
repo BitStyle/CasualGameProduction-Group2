@@ -6,11 +6,13 @@ using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
-    public Sound[] sounds;
+    public AudioClip[] audioClips;
+    public AudioSource audioSource;
 
-    [SerializeField] string nameOfBGM = "BGMusic1";
+    [SerializeField] string[] audioClipNames;
     public AudioMixer audioMixer;
 
+    /*
     private void Awake()
     {
         foreach(Sound sound in sounds)
@@ -22,6 +24,12 @@ public class AudioManager : MonoBehaviour
             sound.source.pitch = sound.pitch;
         }
     }
+    */
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     private void Update()
     {
@@ -30,11 +38,14 @@ public class AudioManager : MonoBehaviour
 
     public void Play(string name)
     {
-        Sound s = Array.Find(sounds, sound => sound.name == name);
-        if(s != null)
+        AudioClip audioClipToUse = Array.Find(audioClips, clip => clip.name == name);
+        if(audioClipToUse != null)
         {
-            s.source.Play();
-        }        
+            //audioSource.clip = audioClipToUse;
+            audioSource.PlayOneShot(audioClipToUse);
+        }    
+        
+        
     }
 
     public void SetMasterVolume(float volume)
