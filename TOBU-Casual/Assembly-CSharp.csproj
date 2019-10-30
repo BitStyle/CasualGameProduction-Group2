@@ -56,11 +56,14 @@
   </ItemGroup>
   <ItemGroup>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
      <Compile Include="Assets\Scripts\CameraLock.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
 =======
      <Compile Include="Assets\PauseMenu.cs" />
+=======
+>>>>>>> Stashed changes
      <Compile Include="Assets\Scripts\AudioManager.cs" />
      <Compile Include="Assets\Scripts\CameraLock.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
@@ -70,6 +73,10 @@
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Ring.cs" />
+<<<<<<< Updated upstream
+=======
+     <Compile Include="Assets\Scripts\RingDestroyer.cs" />
+>>>>>>> Stashed changes
      <Compile Include="Assets\Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\Sound.cs" />
      <Compile Include="Assets\Scripts\TileGenerator.cs" />
@@ -127,6 +134,7 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/19546/Desktop/CasualGameProduction-Group2-master/CasualGameProduction-Group2-master/TOBU-Casual/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -148,6 +156,28 @@
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
  <HintPath>C:/Users/19546/Desktop/CasualGameProduction-Group2-master/CasualGameProduction-Group2-master/TOBU-Casual/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+=======
+ <Reference Include="Unity.Timeline.Editor">
+ <HintPath>C:/Users/19546/Desktop/CasualGameProduction-Group2-master/TOBU-Casual/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro.Editor">
+ <HintPath>C:/Users/19546/Desktop/CasualGameProduction-Group2-master/TOBU-Casual/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PackageManagerUI.Editor">
+ <HintPath>C:/Users/19546/Desktop/CasualGameProduction-Group2-master/TOBU-Casual/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Timeline">
+ <HintPath>C:/Users/19546/Desktop/CasualGameProduction-Group2-master/TOBU-Casual/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.CollabProxy.Editor">
+ <HintPath>C:/Users/19546/Desktop/CasualGameProduction-Group2-master/TOBU-Casual/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>C:/Users/19546/Desktop/CasualGameProduction-Group2-master/TOBU-Casual/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.DataPrivacy">
+ <HintPath>C:/Users/19546/Desktop/CasualGameProduction-Group2-master/TOBU-Casual/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+>>>>>>> Stashed changes
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -327,6 +357,7 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.3f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
  <Reference Include="Vuforia.UnityExtensions">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.3f1/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
  </Reference>
@@ -340,6 +371,19 @@
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
  <HintPath>C:/Users/19546/Desktop/CasualGameProduction-Group2-master/CasualGameProduction-Group2-master/TOBU-Casual/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+=======
+ <Reference Include="Vuforia.UnityExtensions">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.3f1/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.Editor">
+ <HintPath>C:/Users/19546/Desktop/CasualGameProduction-Group2-master/TOBU-Casual/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.StandardEvents">
+ <HintPath>C:/Users/19546/Desktop/CasualGameProduction-Group2-master/TOBU-Casual/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.Tracker">
+ <HintPath>C:/Users/19546/Desktop/CasualGameProduction-Group2-master/TOBU-Casual/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+>>>>>>> Stashed changes
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.3f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -688,7 +732,11 @@
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+<<<<<<< Updated upstream
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+=======
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+>>>>>>> Stashed changes
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
