@@ -29,11 +29,18 @@ public class Score : MonoBehaviour
         }
         
         scoreDisplay.text = ": " + score.ToString();
+
+        if(score > PlayerPrefs.GetFloat("highscore"))
+        {
+            PlayerPrefs.SetFloat("highscore", score);
+        }
+
+        Debug.Log(PlayerPrefs.GetFloat("highscore"));
     }
 
     private void GetStartLoc()
     {
-        startLoc = transform.position;
+        startLoc = this.transform.position;
         lastLoc = startLoc;
     }
 
@@ -43,7 +50,7 @@ public class Score : MonoBehaviour
 
         scoreToAdd = scoreMultiplier * DistTraveled();
         score += scoreToAdd;
-        score = Mathf.Round(score);
+        score = Mathf.CeilToInt(score);
 
         //Debug.Log(score);
     }
@@ -55,5 +62,5 @@ public class Score : MonoBehaviour
         return deltaZ;
     }
 
-
+    
 }

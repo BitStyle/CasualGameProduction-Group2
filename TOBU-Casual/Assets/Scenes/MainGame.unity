@@ -490,7 +490,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.72e-43, y: 0, z: 1.61e-43, w: 0.078125}
+  m_BoundingSphereOverride: {x: 1.81771e+31, y: 6.711041e+22, z: 1.076e-42, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -1730,6 +1730,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5420123067068584180}
   m_PrefabAsset: {fileID: 0}
+--- !u!45 &1541050666
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541050658}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1657634080
 GameObject:
   m_ObjectHideFlags: 0
@@ -2989,7 +2998,7 @@ PrefabInstance:
       objectReference: {fileID: 708657364}
     - target: {fileID: 1541050664, guid: 861333b66da7dab41a0283d8471826b1, type: 3}
       propertyPath: scoreMultiplier
-      value: 1
+      value: 8.36
       objectReference: {fileID: 0}
     - target: {fileID: 4042482180789142108, guid: 861333b66da7dab41a0283d8471826b1,
         type: 3}
