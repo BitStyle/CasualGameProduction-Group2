@@ -105,6 +105,7 @@ public class TileGenerator : MonoBehaviour
             gateSpawned = false;
             GameManager.Instance.RingCounter = 0;
             spiritRealmExitTime = spiritRealmExitTimeDefault;
+            SpawnGate();
             //Debug.Log("Rings RESET. Ring Counter: " + GameManager.Instance.RingCounter);
         }
         
