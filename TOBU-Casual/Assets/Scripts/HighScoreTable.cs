@@ -30,7 +30,7 @@ public class HighScoreTable : MonoBehaviour
         string jsonString = PlayerPrefs.GetString("highscoreTable");
         Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
 
-        AddEntry(GameManager.Instance.Score);
+        AddEntry(PlayerPrefs.GetFloat("currentScore"));
 
         jsonString = PlayerPrefs.GetString("highscoreTable");
         highscores = JsonUtility.FromJson<Highscores>(jsonString);
@@ -113,7 +113,7 @@ public class HighScoreTable : MonoBehaviour
             if (i > scoresToDisplay - 1)
             {
                 Debug.Log(i);
-                highscores.highscoreEntryList.RemoveAt(i - 1);
+                highscores.highscoreEntryList.RemoveAt(i);
             }
         }
 

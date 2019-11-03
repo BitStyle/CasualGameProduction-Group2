@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float moveSpeedX = 8.0f;
     [SerializeField] float moveSpeedY = 8.0f;
     [SerializeField] float moveSpeedZ = 2.0f;
+    [SerializeField] float rotationSpeedY = 8.0f;
     [SerializeField] float clampBufferX = 1.0f;
     [SerializeField] float clampBufferY = 1.0f;
     [SerializeField] Boolean usingGyroControls = true;
@@ -50,6 +51,7 @@ public class PlayerMovement : MonoBehaviour
     private void LateUpdate()
     {
         ClampMovement();
+        //ClampRotation();
     }
 
     private void SetMoveBounds()
@@ -72,6 +74,23 @@ public class PlayerMovement : MonoBehaviour
         transform.position = clampedPos;
     }
 
+    private void ClampRotation()
+    {
+        float clampedRot = transform.rotation.y;
+        Debug.Log(clampedRot);
+        if (clampedRot < -55f)
+        {
+            clampedRot = -55f;
+        }
+        else if (clampedRot > 55f)
+        {
+            clampedRot = 55f;
+        }
+        Vector3 newRotation = new Vector3(90f, clampedRot, 0f);
+        Debug.Log(newRotation);
+        transform.eulerAngles = newRotation;
+    }
+
     private void MoveXY()
     {
         float deltaX = Input.GetAxisRaw("Horizontal") * moveSpeedX;
@@ -87,6 +106,8 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 velocity = new Vector3(deltaX, deltaY, myRigidbody.velocity.z);
         myRigidbody.velocity = velocity;
+        transform.Rotate(0.0f, -(deltaX * Time.deltaTime * rotationSpeedY), 0.0f);
+        Debug.Log(transform.rotation.y);
     }
 
     private void MoveZ()
