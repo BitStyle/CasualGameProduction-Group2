@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
     public bool IsPaused { get; set; } = false;
     private bool _pauseMenuIsActive = false;
     private bool _pauseButtonIsActive = true;
+    public float Score { get; set; }
 
     public int RingCounter
     {

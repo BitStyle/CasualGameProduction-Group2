@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.5285925, g: 0.65673554, b: 0.9138255, a: 1}
+  m_IndirectSpecularColor: {r: 0.5282478, g: 0.65606564, b: 0.9133859, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1786,6 +1786,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5420123067068584180}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1541050666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541050658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 880b5788a43a58a41b899cc645204598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionSpeed: 1
 --- !u!1001 &1620603422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1890,19 +1903,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 019acb12dcca0f6478978eb226ed4fdc, type: 3}
---- !u!114 &1541050666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541050658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 880b5788a43a58a41b899cc645204598, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transitionSpeed: 1
 --- !u!1 &1657634080
 GameObject:
   m_ObjectHideFlags: 0
@@ -2099,16 +2099,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 833430351}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 107c17fa149e4fb49922aecf49ed63ef,
-        type: 3}
-      propertyPath: m_Name
-      value: Bird Model V3 FINAL
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 107c17fa149e4fb49922aecf49ed63ef,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 107c17fa149e4fb49922aecf49ed63ef,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2178,6 +2168,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.18432315
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 107c17fa149e4fb49922aecf49ed63ef,
+        type: 3}
+      propertyPath: m_Name
+      value: Bird Model V3 FINAL
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 107c17fa149e4fb49922aecf49ed63ef,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -38823632025693516, guid: 107c17fa149e4fb49922aecf49ed63ef,
         type: 3}
@@ -3165,11 +3165,7 @@ PrefabInstance:
       propertyPath: scoreDisplay
       value: 
       objectReference: {fileID: 708657364}
-    - target: {fileID: 1541050664, guid: 861333b66da7dab41a0283d8471826b1, type: 3}
-      propertyPath: scoreMultiplier
-      value: 8.36
-      objectReference: {fileID: 0}
-    - target: {fileID: 4042482180789142108, guid: 861333b66da7dab41a0283d8471826b1,
+    - target: {fileID: 4042482182088131097, guid: 861333b66da7dab41a0283d8471826b1,
         type: 3}
       propertyPath: m_IsActive
       value: 0
