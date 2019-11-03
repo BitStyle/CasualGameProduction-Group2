@@ -13,7 +13,6 @@ public class Score : MonoBehaviour
     Vector3 startLoc;
     Vector3 lastLoc;
 
-    float score = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,12 +27,7 @@ public class Score : MonoBehaviour
             TravelScore();
         }
         
-        scoreDisplay.text = ": " + score.ToString();
-
-        if(score > PlayerPrefs.GetFloat("highscore"))
-        {
-            PlayerPrefs.SetFloat("highscore", score);
-        }
+        scoreDisplay.text = ": " + GameManager.Instance.Score.ToString();
 
         Debug.Log(PlayerPrefs.GetFloat("highscore"));
     }
@@ -49,8 +43,8 @@ public class Score : MonoBehaviour
         float scoreToAdd = 0;
 
         scoreToAdd = scoreMultiplier * DistTraveled();
-        score += scoreToAdd;
-        score = Mathf.CeilToInt(score);
+        GameManager.Instance.Score += scoreToAdd;
+        GameManager.Instance.Score = Mathf.CeilToInt(GameManager.Instance.Score);
 
         //Debug.Log(score);
     }
