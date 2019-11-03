@@ -3,7 +3,17 @@ guid: 019acb12dcca0f6478978eb226ed4fdc
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert4
+    second: {fileID: 2100000, guid: 68824162879afe144b2caa35f7f8e64f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert5
+    second: {fileID: 2100000, guid: 0ce792fbe7018d24dbe22c59e1ff3ff6, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -66,8 +76,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips:
-  - 7e325100c84455d42bbc71cbed84a827
+  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -81,7 +90,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.01
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
