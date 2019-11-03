@@ -21,6 +21,7 @@ public class TileGenerator : MonoBehaviour
     Vector3 posToSpawn;
     int currentNumOfTiles = 0;
     bool gateSpawned = false;
+    bool inSpiritRealm = false;
     float spiritRealmExitTime = -1f;
     float spiritRealmExitTimeDefault = -1f;
     GameObject[] ringsArray;
@@ -35,7 +36,7 @@ public class TileGenerator : MonoBehaviour
 
     void Update()
     {
-        if(GameManager.Instance.RingCounter >= 5)
+        if (GameManager.Instance.RingCounter >= 5)
         {
             if (!gateSpawned)
             {
@@ -73,7 +74,6 @@ public class TileGenerator : MonoBehaviour
     {
         GameObject gateGameObject = Instantiate(spiritGate, posToSpawn, Quaternion.identity) as GameObject;
         gateGameObject.transform.SetParent(this.transform);
-
         posToSpawn.z += tileLength;
         currentNumOfTiles++;
         Debug.Log("Gate Tile Spawned");
@@ -105,6 +105,7 @@ public class TileGenerator : MonoBehaviour
             gateSpawned = false;
             GameManager.Instance.RingCounter = 0;
             spiritRealmExitTime = spiritRealmExitTimeDefault;
+            SpawnGate();
             //Debug.Log("Rings RESET. Ring Counter: " + GameManager.Instance.RingCounter);
         }
         
@@ -159,4 +160,5 @@ public class TileGenerator : MonoBehaviour
             }
         }
     }
+
 }

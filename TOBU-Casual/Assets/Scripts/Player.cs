@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
         if (GameManager.Instance.IsDead)
         {
             Debug.Log("You Died");
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
         if (Input.GetKeyDown("p"))
         {
