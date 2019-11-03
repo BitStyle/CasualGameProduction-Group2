@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.5287679, g: 0.65703773, b: 0.9141177, a: 1}
+  m_IndirectSpecularColor: {r: 0.5288743, g: 0.6572542, b: 0.91417414, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1780,6 +1780,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3d19a2fb274854eaad3e919a4ac87c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1434038442 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4522401114844270495, guid: cfd50a10e529e1f4687884c7b2b1a382,
+    type: 3}
+  m_PrefabInstance: {fileID: 4522401114464101102}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1434038443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434038442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14a40680b6b709641a7f0f22aacfe8ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DistanceToPlayer: 7
+  TransparentMaterial: {fileID: 2100000, guid: ef6099cb00879144db95db7d111b5102, type: 2}
+  FadeInTimeout: 0.6
+  FadeOutTimeout: 0.2
+  TargetTransparency: 0.1
 --- !u!1 &1541050658 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5420123067478291545, guid: 861333b66da7dab41a0283d8471826b1,
