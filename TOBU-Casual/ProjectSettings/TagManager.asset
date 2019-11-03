@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Obstacle
   - Ring
+  - BGM
+  - SFX
+  - Transition
   layers:
   - Default
   - TransparentFX
