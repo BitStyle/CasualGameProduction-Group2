@@ -21,7 +21,8 @@ public class Player : MonoBehaviour
         if (GameManager.Instance.IsDead)
         {
             Debug.Log("You Died");
-            SceneManager.LoadScene(2);
+            PlayerPrefs.SetFloat("currentScore", GameManager.Instance.Score);
+            //SceneManager.LoadScene(2);
         }
         if (Input.GetKeyDown("p"))
         {
