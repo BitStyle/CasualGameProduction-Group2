@@ -6,7 +6,9 @@ using UnityEngine;
 
 public class Score : MonoBehaviour
 {
-    [SerializeField] float scoreMultiplier = 1f;
+    [SerializeField] float scoreMultiplierDefault = 1f;
+    [SerializeField] float scoreMultiplierSpirit = 1f;
+    [SerializeField] float scoreMultiplier;
     public TextMeshProUGUI scoreDisplay;
     public Image scoreImage;
 
@@ -16,6 +18,7 @@ public class Score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        scoreMultiplier = scoreMultiplierDefault;
         GetStartLoc();
     }
 
@@ -24,6 +27,14 @@ public class Score : MonoBehaviour
     {
         if (!GameManager.Instance.IsPaused)
         {
+            if (GameManager.Instance.InSpiritWorld)
+            {
+                scoreMultiplier = scoreMultiplierSpirit;
+            }
+            else
+            {
+                scoreMultiplier = scoreMultiplierDefault;
+            }
             TravelScore();
         }
         

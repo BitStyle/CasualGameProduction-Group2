@@ -40,6 +40,8 @@ public class TileGenerator : MonoBehaviour
         {
             if (!gateSpawned)
             {
+                GameManager.Instance.InSpiritWorld = true;
+
                 SpawnGate();
 
                 spiritRealmExitTime = Time.time + timeInSpiritRealm;
@@ -83,9 +85,8 @@ public class TileGenerator : MonoBehaviour
     {
         float tileBuffer = tilesInAdvance * tileLength;
         Vector3 playerPos = player.transform.position;
-        var rng = new System.Random();
-        int arrayIndex = rng.Next(0, tilesArray.Length);
-
+        int arrayIndex = UnityEngine.Random.Range(0, spiritTilesArray.Length - 1);
+        Debug.Log(arrayIndex);
         //If the player's position is within 1 tile length of the tile buffer, spawn a new random tile
         if (playerPos.z >= posToSpawn.z - tileBuffer)
         {
@@ -105,8 +106,8 @@ public class TileGenerator : MonoBehaviour
             gateSpawned = false;
             GameManager.Instance.RingCounter = 0;
             spiritRealmExitTime = spiritRealmExitTimeDefault;
+            GameManager.Instance.InSpiritWorld = false;
             SpawnGate();
-            //Debug.Log("Rings RESET. Ring Counter: " + GameManager.Instance.RingCounter);
         }
         
     }
@@ -130,8 +131,7 @@ public class TileGenerator : MonoBehaviour
     {
         float tileBuffer = tilesInAdvance * tileLength;
         Vector3 playerPos = player.transform.position;
-        var rng = new System.Random();
-        int arrayIndex = rng.Next(0, tilesArray.Length);
+        int arrayIndex = UnityEngine.Random.Range(0, tilesArray.Length - 1);
 
         //If the player's position is within 1 tile length of the tile buffer, spawn a new random tile
         if (playerPos.z >= posToSpawn.z - tileBuffer)

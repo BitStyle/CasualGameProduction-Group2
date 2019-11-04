@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     private bool _pauseMenuIsActive = false;
     private bool _pauseButtonIsActive = true;
     public float Score { get; set; }
+    public bool InSpiritWorld { get; set; } = false;
 
     public int RingCounter
     {
