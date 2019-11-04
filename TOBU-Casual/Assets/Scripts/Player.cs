@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
         {
             Debug.Log("You Died");
             PlayerPrefs.SetFloat("currentScore", GameManager.Instance.Score);
-            //SceneManager.LoadScene(2);
+            SceneManager.LoadScene(2);
         }
         if (Input.GetKeyDown("p"))
         {
@@ -48,6 +48,14 @@ public class Player : MonoBehaviour
             GameManager.Instance.RingCounter++;
             Debug.Log("Ring Count: " + GameManager.Instance.RingCounter);
             RingJuice();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Transition")
+        {
+            GameManager.Instance.InSpiritWorld = !(GameManager.Instance.InSpiritWorld);
         }
     }
 

@@ -6,8 +6,8 @@ using UnityEngine;
 
 public class Score : MonoBehaviour
 {
-    [SerializeField] float scoreMultiplierDefault = 1f;
-    [SerializeField] float scoreMultiplierSpirit = 1f;
+    [SerializeField] float scoreMultiplierDefault = 0.5f;
+    [SerializeField] float scoreMultiplierSpirit = 5f;
     [SerializeField] float scoreMultiplier;
     public TextMeshProUGUI scoreDisplay;
     public Image scoreImage;

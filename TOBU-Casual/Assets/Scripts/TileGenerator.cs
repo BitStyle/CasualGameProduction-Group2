@@ -40,8 +40,6 @@ public class TileGenerator : MonoBehaviour
         {
             if (!gateSpawned)
             {
-                GameManager.Instance.InSpiritWorld = true;
-
                 SpawnGate();
 
                 spiritRealmExitTime = Time.time + timeInSpiritRealm;
@@ -106,7 +104,6 @@ public class TileGenerator : MonoBehaviour
             gateSpawned = false;
             GameManager.Instance.RingCounter = 0;
             spiritRealmExitTime = spiritRealmExitTimeDefault;
-            GameManager.Instance.InSpiritWorld = false;
             SpawnGate();
         }
         

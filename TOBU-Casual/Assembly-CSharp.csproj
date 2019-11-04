@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\BGM_Management.cs" />
     <Compile Include="Assets\Scripts\CameraLock.cs" />
     <Compile Include="Assets\Scripts\CameraTransparency.cs" />
+    <Compile Include="Assets\Scripts\FadeIn.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\HighScoreTable.cs" />
     <Compile Include="Assets\Scripts\HUD.cs" />
