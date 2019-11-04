@@ -84,7 +84,7 @@ public class TileGenerator : MonoBehaviour
         float tileBuffer = tilesInAdvance * tileLength;
         Vector3 playerPos = player.transform.position;
         var rng = new System.Random();
-        int arrayIndex = rng.Next(1, tilesArray.Length);
+        int arrayIndex = rng.Next(0, tilesArray.Length);
 
         //If the player's position is within 1 tile length of the tile buffer, spawn a new random tile
         if (playerPos.z >= posToSpawn.z - tileBuffer)
