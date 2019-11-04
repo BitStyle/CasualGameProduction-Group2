@@ -2600,6 +2600,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037180327}
   m_CullTransparentMesh: 0
+--- !u!1 &2079325940662039724 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1045832042976991076, guid: 861333b66da7dab41a0283d8471826b1,
+    type: 3}
+  m_PrefabInstance: {fileID: 5420123067068584180}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3330608616375331661
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3029,9 +3035,39 @@ PrefabInstance:
       propertyPath: scoreDisplay
       value: 
       objectReference: {fileID: 708657364}
-    - target: {fileID: 833430347, guid: 861333b66da7dab41a0283d8471826b1, type: 3}
-      propertyPath: rotationSpeedZ
-      value: 15
+    - target: {fileID: 1541050659, guid: 861333b66da7dab41a0283d8471826b1, type: 3}
+      propertyPath: ringForEffect
+      value: 
+      objectReference: {fileID: 2079325940662039724}
+    - target: {fileID: 1045832042976991076, guid: 861333b66da7dab41a0283d8471826b1,
+        type: 3}
+      propertyPath: m_Name
+      value: RingEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045832042976991076, guid: 861333b66da7dab41a0283d8471826b1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045832042976991076, guid: 861333b66da7dab41a0283d8471826b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045832042976991079, guid: 861333b66da7dab41a0283d8471826b1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045832042976991079, guid: 861333b66da7dab41a0283d8471826b1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045832042976991079, guid: 861333b66da7dab41a0283d8471826b1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 861333b66da7dab41a0283d8471826b1, type: 3}

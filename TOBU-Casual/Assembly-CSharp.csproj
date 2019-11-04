@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Ring.cs" />
     <Compile Include="Assets\Scripts\RingDestroyer.cs" />
+    <Compile Include="Assets\Scripts\RingJuice.cs" />
     <Compile Include="Assets\Scripts\Score.cs" />
     <Compile Include="Assets\Scripts\Sound.cs" />
     <Compile Include="Assets\Scripts\SpiritRealmTransition.cs" />
