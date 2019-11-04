@@ -16,6 +16,6 @@ public class HUD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ringDisplay.text = "Rings: " + GameManager.Instance.RingCounter;
+        ringDisplay.text = GameManager.Instance.RingCounter.ToString();
     }
 }
