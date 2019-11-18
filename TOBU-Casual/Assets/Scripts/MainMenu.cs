@@ -7,6 +7,8 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
+        //PlayerPrefs.SetFloat("GyroOriginX", Input.acceleration.x);
+        //PlayerPrefs.SetFloat("GyroOriginZ", Input.acceleration.z);
         SceneManager.LoadScene(1);
     }
 

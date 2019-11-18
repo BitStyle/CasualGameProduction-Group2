@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -15,9 +16,15 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float rotationResetSpeed = 3f;
     [SerializeField] Boolean usingGyroControls = true;
     //Gyroscope Sensitivity
+    [SerializeField] bool invertYAxis = false;
+    [SerializeField] Text gyroText;
     [SerializeField] float gyroSensitivity = 0.0f;
     [SerializeField] float gyroSpeedX = 15;
     [SerializeField] float gyroSpeedZ = 20;
+    float gyroOriginX = 0.0f;
+    float gyroOriginZ = 0.0f;
+    Vector3 baseAcceleration;
+    Vector3 relativeAcceleration;
 
 
     float minPosX;
@@ -36,12 +43,18 @@ public class PlayerMovement : MonoBehaviour
         myRigidbody = GetComponent<Rigidbody>();
         myBodyCollider = GetComponent<CapsuleCollider>();
         SetMoveBounds();
+        //gyroOriginX = PlayerPrefs.GetFloat("GyroOriginX");
+        //gyroOriginZ = PlayerPrefs.GetFloat("GyroOriginZ");
+        Input.gyro.enabled = false;
+        Input.gyro.enabled = true;
+        baseAcceleration = Input.acceleration;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        gyroText.text = relativeAcceleration.z.ToString();
     }
 
     private void FixedUpdate()
@@ -117,10 +130,16 @@ public class PlayerMovement : MonoBehaviour
 
         if (usingGyroControls)
         {
-            //Gyroscopid input
-            deltaX += (Input.acceleration.x * (gyroSpeedX + gyroSensitivity));
+
+            //Gyroscopic input
+            relativeAcceleration = Input.acceleration - baseAcceleration;
+            //if(baseAcceleration.z < 0 && Input.acceleration.z < 0 && relativeAcceleration.z < 0)
+            //{
+            //    relativeAcceleration.z = Input.acceleration.z;
+            //}
+            deltaX += ((relativeAcceleration.x) * (gyroSpeedX + gyroSensitivity));
             //The 0.5f applied to the z acceleration allows the player to stay in the center of the screen vertically when the phone is straight
-            deltaY += ((Input.acceleration.z + 0.5f) * (gyroSpeedZ + gyroSensitivity));
+            deltaY += (relativeAcceleration.z * (gyroSpeedZ + gyroSensitivity));
         }
 
         Vector3 velocity = new Vector3(deltaX, deltaY, myRigidbody.velocity.z);
@@ -132,5 +151,11 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector3 velocity = new Vector3(myRigidbody.velocity.x, myRigidbody.velocity.y, moveSpeedZ);
         myRigidbody.velocity = velocity;
-    }  
+    }
+
+    public void UpdateGyroOrigin()
+    {
+        gyroOriginX = PlayerPrefs.GetFloat("GyroOriginX");
+        gyroOriginZ = PlayerPrefs.GetFloat("GyroOriginZ");
+    }
 }
