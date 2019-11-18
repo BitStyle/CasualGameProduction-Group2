@@ -17,7 +17,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Boolean usingGyroControls = true;
     //Gyroscope Sensitivity
     [SerializeField] bool invertYAxis = false;
-    [SerializeField] Text gyroText;
     [SerializeField] float gyroSensitivity = 0.0f;
     [SerializeField] float gyroSpeedX = 15;
     [SerializeField] float gyroSpeedZ = 20;
@@ -54,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gyroText.text = relativeAcceleration.z.ToString();
+
     }
 
     private void FixedUpdate()
