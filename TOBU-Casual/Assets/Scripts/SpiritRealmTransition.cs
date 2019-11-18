@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class SpiritRealmTransition : MonoBehaviour
 {
+    [SerializeField] PostProcessProfile postProcess;
     [SerializeField] float transitionSpeed = 1f;
     bool inMortalRealm = true;
     AudioSource bgm;
@@ -17,7 +19,7 @@ public class SpiritRealmTransition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            StartCoroutine(SkyboxTransition(transitionSpeed));
+            //StartCoroutine(SkyboxTransition(transitionSpeed));
     }
 
 
@@ -30,11 +32,13 @@ public class SpiritRealmTransition : MonoBehaviour
             if (!inMortalRealm)
             {
                 bgm.GetComponent<BGM_Management>().SpiritRealmBGM();
+                postProcess.GetSetting<ColorGrading>().hueShift.value = 180f;
                 inMortalRealm = true;
             }
             else
             {
                 bgm.Play();
+                postProcess.GetSetting<ColorGrading>().hueShift.value = 0f;
                 inMortalRealm = false;
             }
         }
