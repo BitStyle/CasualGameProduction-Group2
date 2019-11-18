@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2281772479868492322}
   - component: {fileID: 9201412180916288733}
   - component: {fileID: 6327128580643076858}
+  - component: {fileID: -2913497350988877737}
   m_Layer: 0
   m_Name: SmallRock08SSS
   m_TagString: Obstacle
@@ -92,3 +93,15 @@ CapsuleCollider:
   m_Height: 0.029659793
   m_Direction: 1
   m_Center: {x: -0.00006791111, y: 0.00037030963, z: -0.00068745355}
+--- !u!114 &-2913497350988877737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5464950556452058449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2b0ed3216e0804ca1e1b6525cc4fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

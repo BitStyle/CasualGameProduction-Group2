@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2382918114283375051}
   - component: {fileID: 6477985276367125843}
   - component: {fileID: 6140618046269369064}
+  - component: {fileID: -8244495633614795963}
   m_Layer: 0
   m_Name: BigRock03
   m_TagString: Obstacle
@@ -58,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2e9befaedb415f546be1c96349b23e0b, type: 2}
+  - {fileID: 2100000, guid: ae8ada62eb78b1a47a0797099e5d9764, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -92,3 +93,15 @@ CapsuleCollider:
   m_Height: 0.13098319
   m_Direction: 2
   m_Center: {x: 0.0027776384, y: -0.0024320364, z: 0.0027878475}
+--- !u!114 &-8244495633614795963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828789450806685895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2b0ed3216e0804ca1e1b6525cc4fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

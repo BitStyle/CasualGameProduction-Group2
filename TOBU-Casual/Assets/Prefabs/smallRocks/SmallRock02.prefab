@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 805641469188661582}
   - component: {fileID: 519524994098404075}
   - component: {fileID: 4597480284974734163}
+  - component: {fileID: -7605170079663055336}
   m_Layer: 0
   m_Name: SmallRock02
   m_TagString: Obstacle
@@ -59,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7ad014a958eeaf845817669ffb61fb93, type: 2}
+  - {fileID: 2100000, guid: ae8ada62eb78b1a47a0797099e5d9764, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -107,3 +108,15 @@ CapsuleCollider:
   m_Height: 0.044545617
   m_Direction: 1
   m_Center: {x: 0.018833425, y: -0.013442737, z: -0.0012948727}
+--- !u!114 &-7605170079663055336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508474348131712665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2b0ed3216e0804ca1e1b6525cc4fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
