@@ -132,13 +132,9 @@ public class PlayerMovement : MonoBehaviour
 
             //Gyroscopic input
             relativeAcceleration = Input.acceleration - baseAcceleration;
-            //if(baseAcceleration.z < 0 && Input.acceleration.z < 0 && relativeAcceleration.z < 0)
-            //{
-            //    relativeAcceleration.z = Input.acceleration.z;
-            //}
             deltaX += ((relativeAcceleration.x) * (gyroSpeedX + gyroSensitivity));
             //The 0.5f applied to the z acceleration allows the player to stay in the center of the screen vertically when the phone is straight
-            deltaY += (relativeAcceleration.z * (gyroSpeedZ + gyroSensitivity));
+            deltaY -= (relativeAcceleration.z * (gyroSpeedZ + gyroSensitivity));
         }
 
         Vector3 velocity = new Vector3(deltaX, deltaY, myRigidbody.velocity.z);
