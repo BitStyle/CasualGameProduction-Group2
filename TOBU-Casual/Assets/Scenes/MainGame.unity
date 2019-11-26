@@ -696,7 +696,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.8901896e-15, y: 2.562191e+12, z: 4.2e-44, w: 1.8901896e-15}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -3921,5 +3921,40 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6058788040158491608, guid: f4584f32871b0f74b9b3b4b025ccf1dc,
         type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6723299902231445722, guid: c0493f7da16b74a4695df30f2bdaadb2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c0493f7da16b74a4695df30f2bdaadb2, type: 3}
+--- !u!1 &6723299901784881807 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6723299902231445725, guid: c0493f7da16b74a4695df30f2bdaadb2,
+    type: 3}
+  m_PrefabInstance: {fileID: 6723299901784881806}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6723299901784881808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6723299901784881807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2748f9c1d169b643a5a6e35f0748788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1541050658}
+  startingTile: {fileID: 2867079815345950278, guid: ee4d7829232f7e141b296ef49f1963f8,
+    type: 3}
+  easyTilesArray:
+  - {fileID: 2462516783398194215, guid: c1d2f01b1afc9934781caf448faac89c, type: 3}
+  MediumTilesArray:
+  - {fileID: 7354675407907962818, guid: d805b9f1515d0414c81ca917bb500b70, type: 3}
+  HardTilesArray:
+  - {fileID: 4767544873092284, guid: f47086d7c6c1c92478f4161dcb1d6f97, type: 3}
+  tileManager: {fileID: 6723299901784881807}
+  tileLength: 50
+  timeInSpiritRealm: 10
+  numOfStartingTiles: 1
+  tilesInAdvance: 3
+  spiritTilesInAdvance: 6
+  maxTilesToDisplay: 6

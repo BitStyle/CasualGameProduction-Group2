@@ -7,11 +7,15 @@ public class TileGenerator_02 : MonoBehaviour
 {
     [SerializeField] GameObject player;
     [SerializeField] GameObject startingTile;
-    [SerializeField] GameObject[][] tilesArray;
+    [SerializeField] GameObject[] easyTilesArray;
+    [SerializeField] GameObject[] mediumTilesArray;
+    [SerializeField] GameObject[] hardTilesArray;
+    [SerializeField] GameObject[,] tilesArray;
     [SerializeField] GameObject tileManager;
     [SerializeField] float tileLength = 0f;
     [SerializeField] float timeInSpiritRealm = 10f;
     [SerializeField] int numOfStartingTiles = 1;
+    [SerializeField] int numOfDifficulties = 3;
     [SerializeField] int tilesInAdvance = 3;
     [SerializeField] int spiritTilesInAdvance = 6;
     [SerializeField] int maxTilesToDisplay = 6;
@@ -20,12 +24,10 @@ public class TileGenerator_02 : MonoBehaviour
     int currentNumOfTiles = 0;
     int difficultyMin = 0;
     int difficultyMax = 0;
+    float difficultyMediumBreakpoint = 10.0f;
+    float difficultyHardBreakpoint = 20.0f;
     bool gateSpawned = false;
     bool inSpiritRealm = false;
-    float spiritRealmExitTime = -1f;
-    float spiritRealmExitTimeDefault = -1f;
-
-    GameObject[] ringsArray;
 
     void Start()
     {
@@ -33,34 +35,45 @@ public class TileGenerator_02 : MonoBehaviour
         difficultyMin = 0;
         difficultyMax = 0;
 
+        for(int i = 0; i < easyTilesArray.Length; i++)
+        {
+            //tilesArray[0, i] = easyTilesArray[i];
+        }
+        for (int i = 0; i < mediumTilesArray.Length; i++)
+        {
+            tilesArray[1, i] = mediumTilesArray[i];
+        }
+        for (int i = 0; i < hardTilesArray.Length; i++)
+        {
+            tilesArray[2, i] = hardTilesArray[i];
+        }
+
         SpawnStartingTiles();
     }
 
 
     void Update()
     {
-        if (GameManager.Instance.RingCounter >= 5)
+        AdjustDifficulty();
+        SpawnTiles();
+        DestroyTiles();
+    }
+
+    private void AdjustDifficulty()
+    {
+        if(Time.deltaTime >= difficultyHardBreakpoint)
         {
-            if (!gateSpawned)
-            {
-                SpawnGate();
-
-                spiritRealmExitTime = Time.time + timeInSpiritRealm;
-
-                DestroyRings();
-
-                gateSpawned = true;
-            }
-            else if (gateSpawned)
-            {
-                SpawnSpiritTiles();
-            }
+            difficultyMax = 2;
+            difficultyMin = 1;
+        }
+        else if(Time.deltaTime >= difficultyMediumBreakpoint)
+        {
+            difficultyMax = 1;
         }
         else
         {
-            SpawnTiles();
+            difficultyMax = 0;
         }
-        DestroyTiles();
     }
 
     private void SpawnStartingTiles()
@@ -89,7 +102,7 @@ public class TileGenerator_02 : MonoBehaviour
         if (playerPos.z >= posToSpawn.z - tileBuffer)
         {
             //Instantiate the tile as a game object, and set the Tile Manager as parent
-            GameObject tileGameObject = Instantiate(tilesArray[difficultyIndex][arrayIndex], posToSpawn, Quaternion.identity) as GameObject;
+            GameObject tileGameObject = Instantiate(tilesArray[difficultyIndex, arrayIndex], posToSpawn, Quaternion.identity) as GameObject;
             tileGameObject.transform.SetParent(this.transform);
             Debug.Log("Tile Spawned");
 
