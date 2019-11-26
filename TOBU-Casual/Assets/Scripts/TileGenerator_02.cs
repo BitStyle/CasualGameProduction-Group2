@@ -30,6 +30,8 @@ public class TileGenerator_02 : MonoBehaviour
     void Start()
     {
         posToSpawn = player.transform.position;
+        difficultyMin = 0;
+        difficultyMax = 0;
 
         SpawnStartingTiles();
     }
