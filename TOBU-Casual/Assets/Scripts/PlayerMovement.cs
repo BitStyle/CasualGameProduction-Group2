@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
@@ -25,6 +26,8 @@ public class PlayerMovement : MonoBehaviour
     Vector3 baseAcceleration;
     Vector3 relativeAcceleration;
 
+    //InvertGyroButtonTextChange
+    [SerializeField] TextMeshProUGUI inverButtonText;
 
     float minPosX;
     float maxPosX;
@@ -132,13 +135,17 @@ public class PlayerMovement : MonoBehaviour
 
             //Gyroscopic input
             relativeAcceleration = Input.acceleration - baseAcceleration;
-            //if(baseAcceleration.z < 0 && Input.acceleration.z < 0 && relativeAcceleration.z < 0)
-            //{
-            //    relativeAcceleration.z = Input.acceleration.z;
-            //}
             deltaX += ((relativeAcceleration.x) * (gyroSpeedX + gyroSensitivity));
-            //The 0.5f applied to the z acceleration allows the player to stay in the center of the screen vertically when the phone is straight
-            deltaY += (relativeAcceleration.z * (gyroSpeedZ + gyroSensitivity));
+            if (invertYAxis)
+            {
+                //The 0.5f applied to the z acceleration allows the player to stay in the center of the screen vertically when the phone is straight
+                deltaY += (relativeAcceleration.z * (gyroSpeedZ + gyroSensitivity));
+            }
+            else
+            {
+                //The 0.5f applied to the z acceleration allows the player to stay in the center of the screen vertically when the phone is straight
+                deltaY -= (relativeAcceleration.z * (gyroSpeedZ + gyroSensitivity));
+            }
         }
 
         Vector3 velocity = new Vector3(deltaX, deltaY, myRigidbody.velocity.z);
@@ -156,5 +163,19 @@ public class PlayerMovement : MonoBehaviour
     {
         gyroOriginX = PlayerPrefs.GetFloat("GyroOriginX");
         gyroOriginZ = PlayerPrefs.GetFloat("GyroOriginZ");
+    }
+
+    public void ChangeYAxis()
+    {
+        if (invertYAxis)
+        {
+            invertYAxis = false;
+            inverButtonText.text = "";
+        }
+        else if (!invertYAxis)
+        {
+            invertYAxis = true;
+            inverButtonText.text = "X";
+        }
     }
 }
