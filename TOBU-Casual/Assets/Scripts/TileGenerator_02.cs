@@ -24,6 +24,7 @@ public class TileGenerator_02 : MonoBehaviour
     int currentNumOfTiles = 0;
     int difficultyMin = 0;
     int difficultyMax = 0;
+    int longestTileArray = 0;
     float difficultyMediumBreakpoint = 10.0f;
     float difficultyHardBreakpoint = 20.0f;
     bool gateSpawned = false;
@@ -35,18 +36,34 @@ public class TileGenerator_02 : MonoBehaviour
         difficultyMin = 0;
         difficultyMax = 0;
 
+        if(easyTilesArray.Length > longestTileArray)
+        {
+            longestTileArray = easyTilesArray.Length;
+        }
+        if (mediumTilesArray.Length > longestTileArray)
+        {
+            longestTileArray = mediumTilesArray.Length;
+        }
+        if (hardTilesArray.Length > longestTileArray)
+        {
+            longestTileArray = hardTilesArray.Length;
+        }
+
+        tilesArray = new GameObject[numOfDifficulties, longestTileArray];
+
         for(int i = 0; i < easyTilesArray.Length; i++)
         {
-            //tilesArray[0, i] = easyTilesArray[i];
+            tilesArray[0, i] = easyTilesArray[i];
         }
-        for (int i = 0; i < mediumTilesArray.Length; i++)
+        for (int i = 0; i < mediumTilesArray.Length - 1; i++)
         {
             tilesArray[1, i] = mediumTilesArray[i];
         }
-        for (int i = 0; i < hardTilesArray.Length; i++)
+        for (int i = 0; i < hardTilesArray.Length - 1; i++)
         {
             tilesArray[2, i] = hardTilesArray[i];
         }
+        
 
         SpawnStartingTiles();
     }

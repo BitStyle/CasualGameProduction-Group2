@@ -3947,14 +3947,18 @@ MonoBehaviour:
     type: 3}
   easyTilesArray:
   - {fileID: 2462516783398194215, guid: c1d2f01b1afc9934781caf448faac89c, type: 3}
-  MediumTilesArray:
+  - {fileID: 2462516783398194215, guid: c1d2f01b1afc9934781caf448faac89c, type: 3}
+  mediumTilesArray:
   - {fileID: 7354675407907962818, guid: d805b9f1515d0414c81ca917bb500b70, type: 3}
-  HardTilesArray:
+  - {fileID: 7354675407907962818, guid: d805b9f1515d0414c81ca917bb500b70, type: 3}
+  hardTilesArray:
+  - {fileID: 4767544873092284, guid: f47086d7c6c1c92478f4161dcb1d6f97, type: 3}
   - {fileID: 4767544873092284, guid: f47086d7c6c1c92478f4161dcb1d6f97, type: 3}
   tileManager: {fileID: 6723299901784881807}
   tileLength: 50
   timeInSpiritRealm: 10
   numOfStartingTiles: 1
+  numOfDifficulties: 3
   tilesInAdvance: 3
   spiritTilesInAdvance: 6
   maxTilesToDisplay: 6
