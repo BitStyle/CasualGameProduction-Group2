@@ -19,6 +19,9 @@ public class TileGenerator_02 : MonoBehaviour
     [SerializeField] int tilesInAdvance = 3;
     [SerializeField] int spiritTilesInAdvance = 6;
     [SerializeField] int maxTilesToDisplay = 6;
+    [SerializeField] float difficultyToMediumBreakpoint = 10.0f;
+    [SerializeField] float difficultyToHardBreakpoint = 20.0f;
+    [SerializeField] float maxDifficultyBreakpoint = 30.0f;
 
     Vector3 posToSpawn;
     int currentNumOfTiles = 0;
@@ -26,9 +29,6 @@ public class TileGenerator_02 : MonoBehaviour
     int difficultyMax = 0;
     int longestTileArray = 0;
     int shortestTileArray = 0;
-    float difficultyToMediumBreakpoint = 10.0f;
-    float difficultyToHardBreakpoint = 20.0f;
-    float maxDifficultyBreakpoint = 30.0f;
     bool gateSpawned = false;
     bool inSpiritRealm = false;
 

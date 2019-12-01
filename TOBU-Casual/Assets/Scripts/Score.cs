@@ -30,10 +30,12 @@ public class Score : MonoBehaviour
             if (GameManager.Instance.InSpiritWorld)
             {
                 scoreMultiplier = scoreMultiplierSpirit;
+                Debug.Log("Score Multiplier: " + scoreMultiplier);
             }
             else
             {
                 scoreMultiplier = scoreMultiplierDefault;
+                Debug.Log("Score Multiplier: " + scoreMultiplier);
             }
             TravelScore();
         }
@@ -56,7 +58,7 @@ public class Score : MonoBehaviour
         scoreToAdd = scoreMultiplier * DistTraveled();
         GameManager.Instance.Score += scoreToAdd;
         GameManager.Instance.Score = Mathf.CeilToInt(GameManager.Instance.Score);
-
+        Debug.Log("Score To Add: " + scoreToAdd);
         //Debug.Log(score);
     }
 

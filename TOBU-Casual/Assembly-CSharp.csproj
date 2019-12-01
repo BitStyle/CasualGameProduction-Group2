@@ -84,7 +84,7 @@
     <Compile Include="Assets\Scripts\Sound.cs" />
     <Compile Include="Assets\Scripts\SpiritRealmTransition.cs" />
     <Compile Include="Assets\Scripts\TileGenerator.cs" />
-    <Compile Include="Assets\Scripts\TileGenerator02.cs" />
+    <Compile Include="Assets\Scripts\TileGenerator_02.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
