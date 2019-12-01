@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour
             else if (_ringCounter >= _maxRings)
             {
                 _ringCounter = _maxRings;
+                InSpiritWorld = true;
             }
         }
     }

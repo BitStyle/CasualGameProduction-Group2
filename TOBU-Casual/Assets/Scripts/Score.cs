@@ -39,8 +39,6 @@ public class Score : MonoBehaviour
         }
         
         scoreDisplay.text = ": " + GameManager.Instance.Score.ToString();
-
-        Debug.Log(PlayerPrefs.GetFloat("highscore"));
     }
 
     private void GetStartLoc()

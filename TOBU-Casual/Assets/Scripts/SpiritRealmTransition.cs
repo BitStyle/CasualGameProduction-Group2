@@ -19,14 +19,14 @@ public class SpiritRealmTransition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            //StartCoroutine(SkyboxTransition(transitionSpeed));
+        //StartCoroutine(SkyboxTransition(transitionSpeed));
     }
 
 
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Transition")
+        if (other.gameObject.tag == "Transition")
         {
             bgm.Stop();
             if (!inMortalRealm)

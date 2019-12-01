@@ -3946,14 +3946,14 @@ MonoBehaviour:
   startingTile: {fileID: 2867079815345950278, guid: ee4d7829232f7e141b296ef49f1963f8,
     type: 3}
   easyTilesArray:
-  - {fileID: 2462516783398194215, guid: c1d2f01b1afc9934781caf448faac89c, type: 3}
-  - {fileID: 2462516783398194215, guid: c1d2f01b1afc9934781caf448faac89c, type: 3}
+  - {fileID: 6058788040158491608, guid: 9bf52c1a77988d14c86b6c21c3b1da3b, type: 3}
+  - {fileID: 6058788040158491608, guid: ea557d6e08b51364488b3883a1357089, type: 3}
   mediumTilesArray:
-  - {fileID: 7354675407907962818, guid: d805b9f1515d0414c81ca917bb500b70, type: 3}
-  - {fileID: 7354675407907962818, guid: d805b9f1515d0414c81ca917bb500b70, type: 3}
+  - {fileID: 6058788040158491608, guid: b44aea3c200803240b3055f863b4ff24, type: 3}
+  - {fileID: 6058788040158491608, guid: 6aba8f8a972f0ee49bc071876893e74b, type: 3}
   hardTilesArray:
-  - {fileID: 4767544873092284, guid: f47086d7c6c1c92478f4161dcb1d6f97, type: 3}
-  - {fileID: 4767544873092284, guid: f47086d7c6c1c92478f4161dcb1d6f97, type: 3}
+  - {fileID: 6058788040158491608, guid: d322bd8b565e66f4f9c087cd5b36555d, type: 3}
+  - {fileID: 6058788040158491608, guid: 9952110fff290ab4394385ffbde002e1, type: 3}
   tileManager: {fileID: 6723299901784881807}
   tileLength: 50
   timeInSpiritRealm: 10

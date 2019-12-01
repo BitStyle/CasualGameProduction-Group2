@@ -25,6 +25,7 @@ public class RingDestroyer : MonoBehaviour
         {
             Destroy(other.gameObject);
             GameManager.Instance.RingCounter = 0;
+            GameManager.Instance.InSpiritWorld = false;
         }
     }
 }
