@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\admobdemo.cs" />
     <Compile Include="Assets\InvertColor.cs" />
+    <Compile Include="Assets\Scripts\AdManager.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\AutoTransparent.cs" />
     <Compile Include="Assets\Scripts\BGM_Management.cs" />
