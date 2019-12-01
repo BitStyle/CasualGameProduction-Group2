@@ -168,11 +168,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7851337611391449249}
     m_Modifications:
-    - target: {fileID: 8961203243485543583, guid: cd1a5051c65f3174e9632f9a12bd6c96,
-        type: 3}
-      propertyPath: m_Name
-      value: Bamboo3 (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 8952234928107818832, guid: cd1a5051c65f3174e9632f9a12bd6c96,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -243,6 +238,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 450
       objectReference: {fileID: 0}
+    - target: {fileID: 8961203243485543583, guid: cd1a5051c65f3174e9632f9a12bd6c96,
+        type: 3}
+      propertyPath: m_Name
+      value: Bamboo3 (3)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd1a5051c65f3174e9632f9a12bd6c96, type: 3}
 --- !u!4 &9220164746529284521 stripped
@@ -258,11 +258,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7851337611391449249}
     m_Modifications:
-    - target: {fileID: 4621102930268498329, guid: 51e8f79c129f00b4ba15d08b983f9a9c,
-        type: 3}
-      propertyPath: m_Name
-      value: Baamboo1 (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 9052109538314555915, guid: 51e8f79c129f00b4ba15d08b983f9a9c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -333,6 +328,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 450
       objectReference: {fileID: 0}
+    - target: {fileID: 4621102930268498329, guid: 51e8f79c129f00b4ba15d08b983f9a9c,
+        type: 3}
+      propertyPath: m_Name
+      value: Baamboo1 (5)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51e8f79c129f00b4ba15d08b983f9a9c, type: 3}
 --- !u!4 &8465089289694844909 stripped
@@ -348,11 +348,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7851337611391449249}
     m_Modifications:
-    - target: {fileID: 4621102930268498329, guid: 51e8f79c129f00b4ba15d08b983f9a9c,
-        type: 3}
-      propertyPath: m_Name
-      value: Baamboo1 (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 9052109538314555915, guid: 51e8f79c129f00b4ba15d08b983f9a9c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -423,6 +418,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 450
       objectReference: {fileID: 0}
+    - target: {fileID: 4621102930268498329, guid: 51e8f79c129f00b4ba15d08b983f9a9c,
+        type: 3}
+      propertyPath: m_Name
+      value: Baamboo1 (4)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51e8f79c129f00b4ba15d08b983f9a9c, type: 3}
 --- !u!4 &7965231222224337695 stripped
@@ -438,11 +438,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7851337611391449249}
     m_Modifications:
-    - target: {fileID: 906701164169613465, guid: 551964a1935843b448de35c50199a4d0,
-        type: 3}
-      propertyPath: m_Name
-      value: BigRock01 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 1324758135528303517, guid: 551964a1935843b448de35c50199a4d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -508,6 +503,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 99.99997
       objectReference: {fileID: 0}
+    - target: {fileID: 906701164169613465, guid: 551964a1935843b448de35c50199a4d0,
+        type: 3}
+      propertyPath: m_Name
+      value: BigRock01 (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 551964a1935843b448de35c50199a4d0, type: 3}
 --- !u!4 &894276897753719592 stripped
@@ -523,11 +523,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7851337611391449249}
     m_Modifications:
-    - target: {fileID: 906701164169613465, guid: 551964a1935843b448de35c50199a4d0,
-        type: 3}
-      propertyPath: m_Name
-      value: BigRock01
-      objectReference: {fileID: 0}
     - target: {fileID: 1324758135528303517, guid: 551964a1935843b448de35c50199a4d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -593,6 +588,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 99.99997
       objectReference: {fileID: 0}
+    - target: {fileID: 906701164169613465, guid: 551964a1935843b448de35c50199a4d0,
+        type: 3}
+      propertyPath: m_Name
+      value: BigRock01
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 551964a1935843b448de35c50199a4d0, type: 3}
 --- !u!4 &1000036137989377502 stripped
@@ -608,20 +608,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7851337611391449249}
     m_Modifications:
-    - target: {fileID: 1828789450806685895, guid: 8d2457a7ac4c99d4bb814ac22e6031ef,
-        type: 3}
-      propertyPath: m_Name
-      value: BigRock03 (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 909990059157114042, guid: 8d2457a7ac4c99d4bb814ac22e6031ef,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.23
+      value: 0.84
       objectReference: {fileID: 0}
     - target: {fileID: 909990059157114042, guid: 8d2457a7ac4c99d4bb814ac22e6031ef,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.83
+      value: -7.53
       objectReference: {fileID: 0}
     - target: {fileID: 909990059157114042, guid: 8d2457a7ac4c99d4bb814ac22e6031ef,
         type: 3}
@@ -677,6 +672,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 99.99997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1828789450806685895, guid: 8d2457a7ac4c99d4bb814ac22e6031ef,
+        type: 3}
+      propertyPath: m_Name
+      value: BigRock03 (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d2457a7ac4c99d4bb814ac22e6031ef, type: 3}
@@ -778,11 +778,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7851337611391449249}
     m_Modifications:
-    - target: {fileID: 1828789450806685895, guid: 4795f176bef0ef548b4aa4b44666e88e,
-        type: 3}
-      propertyPath: m_Name
-      value: BigRock06SSS (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 909990059157114042, guid: 4795f176bef0ef548b4aa4b44666e88e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -791,7 +786,7 @@ PrefabInstance:
     - target: {fileID: 909990059157114042, guid: 4795f176bef0ef548b4aa4b44666e88e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7
+      value: -9.34
       objectReference: {fileID: 0}
     - target: {fileID: 909990059157114042, guid: 4795f176bef0ef548b4aa4b44666e88e,
         type: 3}
@@ -847,6 +842,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 99.99997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1828789450806685895, guid: 4795f176bef0ef548b4aa4b44666e88e,
+        type: 3}
+      propertyPath: m_Name
+      value: BigRock06SSS (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4795f176bef0ef548b4aa4b44666e88e, type: 3}
@@ -953,11 +953,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7851337611391449249}
     m_Modifications:
-    - target: {fileID: 4621102930268498329, guid: 51e8f79c129f00b4ba15d08b983f9a9c,
-        type: 3}
-      propertyPath: m_Name
-      value: Baamboo1
-      objectReference: {fileID: 0}
     - target: {fileID: 9052109538314555915, guid: 51e8f79c129f00b4ba15d08b983f9a9c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1028,6 +1023,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 450.25
       objectReference: {fileID: 0}
+    - target: {fileID: 4621102930268498329, guid: 51e8f79c129f00b4ba15d08b983f9a9c,
+        type: 3}
+      propertyPath: m_Name
+      value: Baamboo1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51e8f79c129f00b4ba15d08b983f9a9c, type: 3}
 --- !u!4 &4967396551866779968 stripped
@@ -1043,11 +1043,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7851337611391449249}
     m_Modifications:
-    - target: {fileID: 8961203243485543583, guid: cd1a5051c65f3174e9632f9a12bd6c96,
-        type: 3}
-      propertyPath: m_Name
-      value: Bamboo3 (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 8952234928107818832, guid: cd1a5051c65f3174e9632f9a12bd6c96,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1118,6 +1113,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 450
       objectReference: {fileID: 0}
+    - target: {fileID: 8961203243485543583, guid: cd1a5051c65f3174e9632f9a12bd6c96,
+        type: 3}
+      propertyPath: m_Name
+      value: Bamboo3 (4)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd1a5051c65f3174e9632f9a12bd6c96, type: 3}
 --- !u!4 &5059714330377458062 stripped
@@ -1133,11 +1133,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7851337611391449249}
     m_Modifications:
-    - target: {fileID: 4621102930268498329, guid: 51e8f79c129f00b4ba15d08b983f9a9c,
-        type: 3}
-      propertyPath: m_Name
-      value: Baamboo1 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 9052109538314555915, guid: 51e8f79c129f00b4ba15d08b983f9a9c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1207,6 +1202,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 450
+      objectReference: {fileID: 0}
+    - target: {fileID: 4621102930268498329, guid: 51e8f79c129f00b4ba15d08b983f9a9c,
+        type: 3}
+      propertyPath: m_Name
+      value: Baamboo1 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51e8f79c129f00b4ba15d08b983f9a9c, type: 3}
@@ -1308,11 +1308,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7851337611391449249}
     m_Modifications:
-    - target: {fileID: 4621102930268498329, guid: 51e8f79c129f00b4ba15d08b983f9a9c,
-        type: 3}
-      propertyPath: m_Name
-      value: Baamboo1 (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 9052109538314555915, guid: 51e8f79c129f00b4ba15d08b983f9a9c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1383,6 +1378,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 450
       objectReference: {fileID: 0}
+    - target: {fileID: 4621102930268498329, guid: 51e8f79c129f00b4ba15d08b983f9a9c,
+        type: 3}
+      propertyPath: m_Name
+      value: Baamboo1 (6)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51e8f79c129f00b4ba15d08b983f9a9c, type: 3}
 --- !u!4 &4334452426545927306 stripped
@@ -1398,11 +1398,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7851337611391449249}
     m_Modifications:
-    - target: {fileID: 906701164169613465, guid: 551964a1935843b448de35c50199a4d0,
-        type: 3}
-      propertyPath: m_Name
-      value: BigRock01 (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 1324758135528303517, guid: 551964a1935843b448de35c50199a4d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1468,6 +1463,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 99.99997
       objectReference: {fileID: 0}
+    - target: {fileID: 906701164169613465, guid: 551964a1935843b448de35c50199a4d0,
+        type: 3}
+      propertyPath: m_Name
+      value: BigRock01 (2)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 551964a1935843b448de35c50199a4d0, type: 3}
 --- !u!4 &6891078997544549641 stripped
@@ -1483,11 +1483,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7851337611391449249}
     m_Modifications:
-    - target: {fileID: 5464950556452058449, guid: 9ae4f0abb2715cd4898a8db74ca3485f,
-        type: 3}
-      propertyPath: m_Name
-      value: SmallRock04 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 8157373561866121841, guid: 9ae4f0abb2715cd4898a8db74ca3485f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1543,6 +1538,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 24.893002
       objectReference: {fileID: 0}
+    - target: {fileID: 5464950556452058449, guid: 9ae4f0abb2715cd4898a8db74ca3485f,
+        type: 3}
+      propertyPath: m_Name
+      value: SmallRock04 (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ae4f0abb2715cd4898a8db74ca3485f, type: 3}
 --- !u!4 &4490580139950786261 stripped
@@ -1558,11 +1558,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7851337611391449249}
     m_Modifications:
-    - target: {fileID: 8961203243485543583, guid: cd1a5051c65f3174e9632f9a12bd6c96,
-        type: 3}
-      propertyPath: m_Name
-      value: Bamboo3 (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 8952234928107818832, guid: cd1a5051c65f3174e9632f9a12bd6c96,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1633,6 +1628,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 450
       objectReference: {fileID: 0}
+    - target: {fileID: 8961203243485543583, guid: cd1a5051c65f3174e9632f9a12bd6c96,
+        type: 3}
+      propertyPath: m_Name
+      value: Bamboo3 (6)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd1a5051c65f3174e9632f9a12bd6c96, type: 3}
 --- !u!4 &3153921670585595800 stripped
@@ -1648,11 +1648,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7851337611391449249}
     m_Modifications:
-    - target: {fileID: 1828789450806685895, guid: 8d2457a7ac4c99d4bb814ac22e6031ef,
-        type: 3}
-      propertyPath: m_Name
-      value: BigRock03 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 909990059157114042, guid: 8d2457a7ac4c99d4bb814ac22e6031ef,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1718,6 +1713,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 99.99997
       objectReference: {fileID: 0}
+    - target: {fileID: 1828789450806685895, guid: 8d2457a7ac4c99d4bb814ac22e6031ef,
+        type: 3}
+      propertyPath: m_Name
+      value: BigRock03 (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d2457a7ac4c99d4bb814ac22e6031ef, type: 3}
 --- !u!4 &6230710366246553529 stripped
@@ -1733,11 +1733,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7851337611391449249}
     m_Modifications:
-    - target: {fileID: 8961203243485543583, guid: cd1a5051c65f3174e9632f9a12bd6c96,
-        type: 3}
-      propertyPath: m_Name
-      value: Bamboo3
-      objectReference: {fileID: 0}
     - target: {fileID: 8952234928107818832, guid: cd1a5051c65f3174e9632f9a12bd6c96,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1808,6 +1803,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 450
       objectReference: {fileID: 0}
+    - target: {fileID: 8961203243485543583, guid: cd1a5051c65f3174e9632f9a12bd6c96,
+        type: 3}
+      propertyPath: m_Name
+      value: Bamboo3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd1a5051c65f3174e9632f9a12bd6c96, type: 3}
 --- !u!4 &2817093856755123053 stripped
@@ -1823,11 +1823,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7851337611391449249}
     m_Modifications:
-    - target: {fileID: 2079325940662039724, guid: 0b43971a1a1413c4585366b7ddf3434c,
-        type: 3}
-      propertyPath: m_Name
-      value: Ring
-      objectReference: {fileID: 0}
     - target: {fileID: 2079325940662039727, guid: 0b43971a1a1413c4585366b7ddf3434c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1883,6 +1878,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2079325940662039724, guid: 0b43971a1a1413c4585366b7ddf3434c,
+        type: 3}
+      propertyPath: m_Name
+      value: Ring
+      objectReference: {fileID: 0}
     - target: {fileID: 6458596326474131432, guid: 0b43971a1a1413c4585366b7ddf3434c,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -1903,11 +1903,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7851337611391449249}
     m_Modifications:
-    - target: {fileID: 8961203243485543583, guid: cd1a5051c65f3174e9632f9a12bd6c96,
-        type: 3}
-      propertyPath: m_Name
-      value: Bamboo3 (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 8952234928107818832, guid: cd1a5051c65f3174e9632f9a12bd6c96,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1978,6 +1973,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 450
       objectReference: {fileID: 0}
+    - target: {fileID: 8961203243485543583, guid: cd1a5051c65f3174e9632f9a12bd6c96,
+        type: 3}
+      propertyPath: m_Name
+      value: Bamboo3 (2)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd1a5051c65f3174e9632f9a12bd6c96, type: 3}
 --- !u!4 &2234941298606641743 stripped
@@ -1993,11 +1993,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7851337611391449249}
     m_Modifications:
-    - target: {fileID: 5464950556452058449, guid: 9ae4f0abb2715cd4898a8db74ca3485f,
-        type: 3}
-      propertyPath: m_Name
-      value: SmallRock04
-      objectReference: {fileID: 0}
     - target: {fileID: 8157373561866121841, guid: 9ae4f0abb2715cd4898a8db74ca3485f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2053,6 +2048,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 24.893002
       objectReference: {fileID: 0}
+    - target: {fileID: 5464950556452058449, guid: 9ae4f0abb2715cd4898a8db74ca3485f,
+        type: 3}
+      propertyPath: m_Name
+      value: SmallRock04
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ae4f0abb2715cd4898a8db74ca3485f, type: 3}
 --- !u!4 &1677620585517683194 stripped
@@ -2068,11 +2068,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7851337611391449249}
     m_Modifications:
-    - target: {fileID: 1828789450806685895, guid: 4795f176bef0ef548b4aa4b44666e88e,
-        type: 3}
-      propertyPath: m_Name
-      value: BigRock06SSS
-      objectReference: {fileID: 0}
     - target: {fileID: 909990059157114042, guid: 4795f176bef0ef548b4aa4b44666e88e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2138,6 +2133,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 99.99997
       objectReference: {fileID: 0}
+    - target: {fileID: 1828789450806685895, guid: 4795f176bef0ef548b4aa4b44666e88e,
+        type: 3}
+      propertyPath: m_Name
+      value: BigRock06SSS
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4795f176bef0ef548b4aa4b44666e88e, type: 3}
 --- !u!4 &7471620582767724626 stripped
@@ -2153,11 +2153,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7851337611391449249}
     m_Modifications:
-    - target: {fileID: 8961203243485543583, guid: cd1a5051c65f3174e9632f9a12bd6c96,
-        type: 3}
-      propertyPath: m_Name
-      value: Bamboo3 (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 8952234928107818832, guid: cd1a5051c65f3174e9632f9a12bd6c96,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2228,6 +2223,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 450
       objectReference: {fileID: 0}
+    - target: {fileID: 8961203243485543583, guid: cd1a5051c65f3174e9632f9a12bd6c96,
+        type: 3}
+      propertyPath: m_Name
+      value: Bamboo3 (5)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd1a5051c65f3174e9632f9a12bd6c96, type: 3}
 --- !u!4 &917925685177133712 stripped
@@ -2243,11 +2243,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7851337611391449249}
     m_Modifications:
-    - target: {fileID: 4621102930268498329, guid: 51e8f79c129f00b4ba15d08b983f9a9c,
-        type: 3}
-      propertyPath: m_Name
-      value: Baamboo1 (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 9052109538314555915, guid: 51e8f79c129f00b4ba15d08b983f9a9c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2318,6 +2313,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 450.25
       objectReference: {fileID: 0}
+    - target: {fileID: 4621102930268498329, guid: 51e8f79c129f00b4ba15d08b983f9a9c,
+        type: 3}
+      propertyPath: m_Name
+      value: Baamboo1 (2)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51e8f79c129f00b4ba15d08b983f9a9c, type: 3}
 --- !u!4 &796207501935927598 stripped
@@ -2333,11 +2333,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7851337611391449249}
     m_Modifications:
-    - target: {fileID: 4621102930268498329, guid: 51e8f79c129f00b4ba15d08b983f9a9c,
-        type: 3}
-      propertyPath: m_Name
-      value: Baamboo1 (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 9052109538314555915, guid: 51e8f79c129f00b4ba15d08b983f9a9c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2407,6 +2402,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 450.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4621102930268498329, guid: 51e8f79c129f00b4ba15d08b983f9a9c,
+        type: 3}
+      propertyPath: m_Name
+      value: Baamboo1 (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51e8f79c129f00b4ba15d08b983f9a9c, type: 3}
