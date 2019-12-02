@@ -39,13 +39,15 @@ public class SpiritRealmTransition : MonoBehaviour
         if (!GameManager.Instance.InSpiritWorld)
         {
             bgm.GetComponent<BGM_Management>().SpiritRealmBGM();
-            postProcess.GetSetting<ColorGrading>().hueShift.value = 180f;
+            //postProcess.GetSetting<ColorGrading>().hueShift.value = 180f;
+            StartCoroutine(ColorTransition(180.0f, 0.0f, 0.5f));
             GameManager.Instance.InSpiritWorld = true;
         }
         else
         {
             bgm.Play();
-            postProcess.GetSetting<ColorGrading>().hueShift.value = 0f;
+            //postProcess.GetSetting<ColorGrading>().hueShift.value = 0f;
+            StartCoroutine(ColorTransition(0.0f, 180.0f, 1.0f));
             GameManager.Instance.InSpiritWorld = false;
         }
     }
@@ -55,6 +57,19 @@ public class SpiritRealmTransition : MonoBehaviour
         bgm.Play();
         postProcess.GetSetting<ColorGrading>().hueShift.value = 0f;
         GameManager.Instance.InSpiritWorld = false;
+    }
+
+    private IEnumerator ColorTransition(float originalValue, float targetValue, float time)
+    {
+        float originalTime = time;
+
+        while(time > 0.0f)
+        {
+            time -= Time.deltaTime;
+
+            postProcess.GetSetting<ColorGrading>().hueShift.value = Mathf.Lerp(originalValue, targetValue, time);
+            yield return null;
+        }
     }
 
     private IEnumerator SkyboxTransition(float speed)
