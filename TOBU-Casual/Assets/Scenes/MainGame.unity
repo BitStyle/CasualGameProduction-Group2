@@ -1371,8 +1371,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mortalRealm: {fileID: 8300000, guid: 27b81ceef3f0c3d4abef29518437ee45, type: 3}
-  spiritRealm: {fileID: 8300000, guid: 1753c7dafa51d304dbfd958bb557a747, type: 3}
-  audio: {fileID: 843016339}
+  spiritRealm: {fileID: 8300000, guid: 9e798c1d3c2a9e74ea8e489f0a072c5a, type: 3}
+  audioSource: {fileID: 843016339}
 --- !u!1 &884440949 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7212859704787980879, guid: 2ac21824616b2a94eb85c8a6c20964b2,
@@ -3970,12 +3970,12 @@ PrefabInstance:
     - target: {fileID: 7483596329254173224, guid: 2ac21824616b2a94eb85c8a6c20964b2,
         type: 3}
       propertyPath: audioClips.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7483596329254173224, guid: 2ac21824616b2a94eb85c8a6c20964b2,
         type: 3}
       propertyPath: audioClipNames.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7483596329254173224, guid: 2ac21824616b2a94eb85c8a6c20964b2,
         type: 3}
@@ -4007,6 +4007,41 @@ PrefabInstance:
         type: 3}
       propertyPath: audioClipNames.Array.data[0]
       value: Ring
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483596329254173224, guid: 2ac21824616b2a94eb85c8a6c20964b2,
+        type: 3}
+      propertyPath: audioClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: b9bec9fe4160f8743b512b66b0ae8cde, type: 3}
+    - target: {fileID: 7483596329254173224, guid: 2ac21824616b2a94eb85c8a6c20964b2,
+        type: 3}
+      propertyPath: audioClipNames.Array.data[1]
+      value: BirdCry
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483596329254173224, guid: 2ac21824616b2a94eb85c8a6c20964b2,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 884440951}
+    - target: {fileID: 7483596329254173224, guid: 2ac21824616b2a94eb85c8a6c20964b2,
+        type: 3}
+      propertyPath: audioClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 519065525e8d6314fab0443fe227eef0, type: 3}
+    - target: {fileID: 7483596329254173224, guid: 2ac21824616b2a94eb85c8a6c20964b2,
+        type: 3}
+      propertyPath: audioClipNames.Array.data[2]
+      value: Impact
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483596329254173224, guid: 2ac21824616b2a94eb85c8a6c20964b2,
+        type: 3}
+      propertyPath: audioClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7419aba52b0ba1e42948ebce1aa04676, type: 3}
+    - target: {fileID: 7483596329254173224, guid: 2ac21824616b2a94eb85c8a6c20964b2,
+        type: 3}
+      propertyPath: audioClipNames.Array.data[3]
+      value: Transition
       objectReference: {fileID: 0}
     - target: {fileID: 7325928982206123932, guid: 2ac21824616b2a94eb85c8a6c20964b2,
         type: 3}

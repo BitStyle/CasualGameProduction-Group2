@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     {
         //Not sure where the best place to put this is (initiating background music)
         FindObjectOfType<AudioManager>().Play("BGMusic1");
+        FindObjectOfType<AudioManager>().Play("BirdCry");
         srTransition = GetComponent<SpiritRealmTransition>();
 
         //Stop game from sleeping, because gyroscope is not a registered input.
@@ -31,7 +32,7 @@ public class Player : MonoBehaviour
     {
         if (GameManager.Instance.IsDead)
         {
-            Debug.Log("You Died");
+            FindObjectOfType<AudioManager>().Play("Impact");
             PlayerPrefs.SetFloat("currentScore", GameManager.Instance.Score);
             SceneManager.LoadScene(2);
         }
@@ -52,6 +53,7 @@ public class Player : MonoBehaviour
             GameManager.Instance.RingCounter++;
             if(GameManager.Instance.RingCounter >= 5 && GameManager.Instance.InSpiritWorld == false)
             {
+                FindObjectOfType<AudioManager>().Play("Transition");
                 srTransition.WorldTransition();
             }
             RingJuice();
