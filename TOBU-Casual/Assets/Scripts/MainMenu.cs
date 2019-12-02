@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour
     {
         //PlayerPrefs.SetFloat("GyroOriginX", Input.acceleration.x);
         //PlayerPrefs.SetFloat("GyroOriginZ", Input.acceleration.z);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("LoadingScreen");
     }
 
     public void ReturntoMainMenu()
@@ -19,6 +19,6 @@ public class MainMenu : MonoBehaviour
 
     public void QuitGame()
     {
-        Application.Quit();
+        //Application.Quit();
     }
 }

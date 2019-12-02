@@ -6,22 +6,26 @@ public class BGM_Management : MonoBehaviour
 {
     [SerializeField] AudioClip mortalRealm;
     [SerializeField] AudioClip spiritRealm;
-    public AudioSource audio;
+    [SerializeField] AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
-        audio = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void MortalRealmBGM()
     {
-        audio.PlayOneShot(mortalRealm);
+        audioSource.clip = mortalRealm;
+        audioSource.loop = true;
+        audioSource.Play();
     }
 
     public void SpiritRealmBGM()
     {
-        audio.PlayOneShot(spiritRealm);
+        audioSource.clip = spiritRealm;
+        audioSource.loop = true;
+        audioSource.Play();
     }
 
 }

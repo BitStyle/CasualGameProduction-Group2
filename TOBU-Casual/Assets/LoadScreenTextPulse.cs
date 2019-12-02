@@ -43,7 +43,7 @@ public class LoadScreenTextPulse : MonoBehaviour
 
             //Fade-in 
             yield return fadeInAndOut(true, duration);
-
+            asyncLoad.allowSceneActivation = true;
         }
     }
 
@@ -90,7 +90,6 @@ public class LoadScreenTextPulse : MonoBehaviour
         // Wait until the asynchronous scene fully loads
         while (!asyncLoad.isDone)
         {
-            loadText.text = "Loading progress: " + (asyncLoad.progress * 100) + "%";
             yield return null;
         }
     }
