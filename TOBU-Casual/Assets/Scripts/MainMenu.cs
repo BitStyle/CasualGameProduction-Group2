@@ -9,16 +9,18 @@ public class MainMenu : MonoBehaviour
     {
         //PlayerPrefs.SetFloat("GyroOriginX", Input.acceleration.x);
         //PlayerPrefs.SetFloat("GyroOriginZ", Input.acceleration.z);
-        SceneManager.LoadScene(1);
+        FindObjectOfType<AudioManager>().Play("BambooHit");
+        SceneManager.LoadScene("LoadingScreen");
     }
 
     public void ReturntoMainMenu()
     {
+        FindObjectOfType<AudioManager>().Play("BambooHit");
         SceneManager.LoadScene(0);
     }
 
     public void QuitGame()
     {
-        Application.Quit();
+        //Application.Quit();
     }
 }
