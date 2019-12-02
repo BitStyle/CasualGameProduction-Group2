@@ -45,7 +45,7 @@ public class SpiritRealmTransition : MonoBehaviour
         }
         else
         {
-            bgm.Play();
+            bgm.GetComponent<BGM_Management>().MortalRealmBGM();
             //postProcess.GetSetting<ColorGrading>().hueShift.value = 0f;
             StartCoroutine(ColorTransition(0.0f, 180.0f, 1.0f));
             GameManager.Instance.InSpiritWorld = false;
