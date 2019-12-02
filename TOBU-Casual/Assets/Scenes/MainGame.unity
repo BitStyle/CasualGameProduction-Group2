@@ -182,9 +182,9 @@ MonoBehaviour:
   tilesInAdvance: 3
   spiritTilesInAdvance: 6
   maxTilesToDisplay: 6
-  difficultyToMediumBreakpoint: 60
-  difficultyToHardBreakpoint: 120
-  maxDifficultyBreakpoint: 180
+  difficultyToMediumBreakpoint: 2
+  difficultyToHardBreakpoint: 3
+  maxDifficultyBreakpoint: 10
 --- !u!1 &81922215
 GameObject:
   m_ObjectHideFlags: 0

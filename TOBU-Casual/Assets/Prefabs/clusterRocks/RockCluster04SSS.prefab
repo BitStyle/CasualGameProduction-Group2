@@ -180,10 +180,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.021127032
-  m_Height: 0.08531602
+  m_Radius: 0.0196787
+  m_Height: 0.078612745
   m_Direction: 0
-  m_Center: {x: 0.0013201713, y: 0.000943222, z: -0.001138258}
+  m_Center: {x: -0.0020314693, y: 0.0009432208, z: -0.0025865876}
 --- !u!1 &5425370630971188452
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,10 +272,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.05038435
-  m_Height: 0.13098319
+  m_Radius: 0.042854577
+  m_Height: 0.12362902
   m_Direction: 2
-  m_Center: {x: 0.0027776384, y: -0.0024320364, z: 0.0027878475}
+  m_Center: {x: 0.0027776384, y: 0.0050977417, z: -0.0008892441}
 --- !u!1 &8063374652105729323
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,7 +286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6466471281602615096}
   m_Layer: 0
-  m_Name: RockCluster02
+  m_Name: RockCluster04SSS
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
