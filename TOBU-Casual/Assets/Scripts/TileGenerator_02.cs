@@ -22,6 +22,7 @@ public class TileGenerator_02 : MonoBehaviour
     [SerializeField] float difficultyToMediumBreakpoint = 10.0f;
     [SerializeField] float difficultyToHardBreakpoint = 20.0f;
     [SerializeField] float maxDifficultyBreakpoint = 30.0f;
+    float timeOffset;
 
     Vector3 posToSpawn;
     int currentNumOfTiles = 0;
@@ -34,6 +35,7 @@ public class TileGenerator_02 : MonoBehaviour
 
     void Start()
     {
+        timeOffset = Time.time;
         posToSpawn = player.transform.position;
         difficultyMin = 0;
         difficultyMax = 0;
@@ -92,17 +94,17 @@ public class TileGenerator_02 : MonoBehaviour
     private void AdjustDifficulty()
     {
         //Debug.Log(Time.time);
-        if (Time.time >= maxDifficultyBreakpoint)
+        if (Time.time >= (timeOffset + maxDifficultyBreakpoint))
         {
             difficultyMax = 2;
             difficultyMin = 2;
         }
-        else if (Time.time >= difficultyToHardBreakpoint)
+        else if (Time.time >= (timeOffset + difficultyToHardBreakpoint))
         {
             difficultyMax = 2;
             difficultyMin = 1;
         }
-        else if (Time.time >= difficultyToMediumBreakpoint)
+        else if (Time.time >= (timeOffset + difficultyToMediumBreakpoint))
         {
             difficultyMax = 1;
         }
