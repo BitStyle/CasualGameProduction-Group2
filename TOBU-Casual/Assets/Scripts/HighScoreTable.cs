@@ -73,12 +73,13 @@ public class HighScoreTable : MonoBehaviour
         entryTransform.Find("Score").GetComponent<TextMeshProUGUI>().text = score.ToString();
 
         //entryTransform.Find("DarkerRed").gameObject.SetActive(rank % 2 == 1);
-
+        /*
         if (rank == 1)
         {
             entryTransform.Find("Rank").GetComponent<TextMeshProUGUI>().color = Color.green;
             entryTransform.Find("Score").GetComponent<TextMeshProUGUI>().color = Color.green;
         }
+        */
 
         transformList.Add(entryTransform);
 

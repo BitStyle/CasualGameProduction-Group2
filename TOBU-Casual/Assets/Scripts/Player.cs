@@ -9,17 +9,21 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject ringForEffect;
     private IEnumerator coroutine;
     private Vector3 originalScale;
+    private SpiritRealmTransition srTransition;
 
     // Start is called before the first frame update
     void Start()
     {
         //Not sure where the best place to put this is (initiating background music)
         FindObjectOfType<AudioManager>().Play("BGMusic1");
+        srTransition = GetComponent<SpiritRealmTransition>();
 
         //Stop game from sleeping, because gyroscope is not a registered input.
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
 
         originalScale = ringForEffect.transform.localScale;
+
+        srTransition.SetDefault();
     }
 
     // Update is called once per frame
@@ -46,7 +50,10 @@ public class Player : MonoBehaviour
         else if (collision.collider.tag == "Ring")
         {
             GameManager.Instance.RingCounter++;
-            Debug.Log("Ring Count: " + GameManager.Instance.RingCounter);
+            if(GameManager.Instance.RingCounter >= 5 && GameManager.Instance.InSpiritWorld == false)
+            {
+                srTransition.WorldTransition();
+            }
             RingJuice();
         }
     }
